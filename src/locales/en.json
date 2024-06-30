@@ -1,0 +1,143 @@
+{ "header":{
+    "language": "Language",
+    "advantages": "Advantages",
+    "how_it_works": "How it works?",
+    "contacts": "Contacts"
+    
+  },
+  "banner-info":{
+    "title": "  It’s a highly liquid and secure food contract for retail investors on blockchain*",
+    "button":"Invest Now",
+    "quote": {
+      "text": "The next generation for markets, the next generation for securities, will be tokenization of securities",
+      "author": "Larry Fink, CEO BlackRock"
+
+    }
+  },
+  
+    "blockchain-contracts": {
+      "title": "Why we are using blockchain for our futures contracts:",
+      "items": {
+        "0": "Fast",
+        "1": "Secure",
+        "2": "Transparent and immutable",
+        "3": "Worldwide technology",
+        "4": "Cheap (even for small quantities of food)",
+        "5": "Efficient with minimal intermediaries"
+      }
+    },
+    "banner_img": {
+      "title": "<span class='text-pink'>UNCO FOOD FUTURES</span> are not paper, but always <span class='text-pink'>REAL FOOD</span>",
+      "button": "Сlick here"
+    },
+    "profit_chart": {
+    "info": "you can get more than 200% profit in a few months*",
+    "items": {
+      "0": "Solving the marketing problem as we already have loyal consumers",
+      "1": "Optimised and <span class='text-pink'>subsidised</span> supply chain management",
+      "2": "Financing production"
+    }
+  },
+  
+    "profit_list": {
+      "title": "Profitable with UNCO:",
+      "items": {
+        "0": "Price lower than retail",
+        "1": "Products for delivery — close to home (our eco-point is closer than the retail point)",
+        "2": "Products from a local farmer/producer",
+        "3": "'Day-to-day' fresh (product is available for obtainment within 24 hours after shipment from the farmer/producer)",
+        "4": "Low quantity/absence of preservatives and other additives that increase the shelf life/quality of the product"
+      }
+    
+  },
+  "banner_watch": {
+    "title": "UNCO food futures for you, if you:",
+    "button": "Invest at an early stage",
+    "items": {
+      "0": "Look for secured investments with more than 40% interest rate*",
+      "1": "Love 24H fresh and healthy food with cheap price",
+      "2": "Look for food products with stable price and supply for your business",
+      "3": "Look for cheaper ways to get finance for your food production"
+    }
+  },
+  "banner_founder": {
+    "quote": "Smartphones have changed a lot of things, but they are just beginning to solve the huge cost challenges of low-tech in food distribution and retail. And there is not only a fix of the «40% food waste» problem, but also shockingly impressive and fast profits for those who offer a solution. Food is the most reliable business there is. Always needed and for everyone.",
+    "author": "Andrew Yusupov, Founder UNCO"
+  },
+  
+    "charts_difference": {
+      "title": "Significant price difference even with a retailer 0.5 km from farmer:",
+      "potatoes_title": "Potatoes price per kg",
+      "peaches_title": "Peaches price per kg",
+      "button": "Buy for farm price using Unco Food Futures"
+    },
+    "workflow_algorithm": {
+      "title": "How it works?",
+      "items": [
+        {
+          "text": "The farmer is publishing a futures contract for the upcoming sale of milk at a price of 50 cents per liter. The delivery date is in 30 days."
+        },
+        {
+          "text": "You purchase a “Milk UFF” from us at a price of 50 cents +10% (service commission). In 30 days, you can sell or resell on the “UNCO Exchange” in your country or Worldwide."
+        },
+        {
+          "text": "Frau Martha counts her money and loves discounts, so she will gladly buy it for 95 cents, especially since it's very fresh — straight from the farm. The milk will be delivered to the pickup point tomorrow."
+        },
+        {
+          "text": "HoReCa needs fresh products every day, buying small quantities wholesale from distributors at 90 cents. Will they accept the freshest goods from the investor for 85 cents, including delivery?"
+        }
+      ]
+    },
+    "banner_farmer": {
+      "average_order_value_text": "average order value*",
+      "average_markup_text": "the average product's markup is*",
+      "orders_per_month_text": "regular customer of e-grocery makes 2.4 orders per month*",
+      "footnote": "*based on 2 year business results"
+    },
+    "faq_list": {
+      "title": "FAQ:",
+      "questions": {
+        "what_is_uff": "What is UFF?",
+        "what_to_do_with_uff": "What should I do with “UNCO food futures” after purchase?",
+        "pick_up_product": "Where can I pick up my product?",
+        "seller_guarantee": "What guarantee is there that the seller will not deceive me by taking my money but not delivering the goods to me?"
+      },
+      "answers": {
+        "what_is_uff": "UNCO food futures is a financial contract obligating the buyer to purchase, and the seller to sell, a specific quantity of a food commodity at a predetermined price and date in the future. The tool allows you to save significantly on products. Get «investment» income, what you save is what you earn.",
+        "what_to_do_with_uff": "You can receive goods using it at a place and time specified in “UFF” or exchange it on the p2p platform.",
+        "pick_up_product": "Check your UFF for the exact time and address of delivery.",
+        "seller_guarantee": "If the supplier fails on delivery, UNCO will pay you the original price of the futures contract."
+      }
+    },
+    "other_services": {
+    "title": "You are welcome to use our other services",
+    "retail_customers": "UFF for Retail Customers",
+    "exchange": "UFF Exchange",
+    "nft888": "UNCO NFT888",
+    "investors": "UFF for Investors",
+    "ecopoints": "UFF for Eco-Points",
+    "ecommerce": "UFF for E-commerce",
+    "producers": "UFF for Producers"
+  },
+  "footer": {
+    "contact_us": "Contact Us",
+    "questions": "For your questions:",
+    "method_of_communication": "Method of communication",
+    "phone_number": "Phone number",
+    "email": "E-mail",
+    "messenger_link": "Messenger link",
+    "social_network_link": "Social network link",
+    "enter_contact_info": "",
+    "paste_messenger_link": "Paste messenger link",
+    "paste_social_network_link": "Paste social network link",
+    "message": "",
+    "enter_message": "Enter your message",
+    "send": "Send",
+     "rights_reserved": "All rights reserved. Any parts of this presentation are subject to change by the owner at any time without prior notice. This presentation or parts of it does not form a business proposal or part of a contract. Items are approximate and subject to negotiation. Any copying and use for commercial purposes requires the written consent of the copyright holder.",
+    "disclaimer": "*All figures, designations, abbreviations and data in this web pages are solely for the purpose of explaining the pattern of operation, are not based on actual facts and events and may not be used for any other purpose (including but not limited to: investment decisions, buying, education, predictions) other than a general understanding of the business model. Trading services are provided by third-party companies under the relevant agreements and licenses of the respective countries where the sales and other transactions take place. Past performance is not a reliable indicator of future results. Your returns may increase or decrease as a result of currency fluctuations. Your capital is at risk.  View Trading Disclosures on the websites of the respective trading platforms."
+  }
+}
+  
+  
+
+  
