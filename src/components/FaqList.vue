@@ -206,7 +206,7 @@ export default {
 
   .faq-list__item_answer.visible {
     margin-top: 10px;
-    max-height: 240px;
+    max-height: 260px;
   }
 }
 </style>
