@@ -159,24 +159,21 @@ export default {
   display: flex;
   align-items: center;
 }
-/* .faq-list__item_btn .active {
-  transform: rotate(180deg);
-} */
+
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
   .faq-list__title {
     font-size: 24px;
     margin-bottom: 20px;
   }
   .faq-list__item_answer.visible {
-   
-
-  margin-top: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-    
+    max-height: 300px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
-}@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 767px) {
   .faq-list {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -190,7 +187,6 @@ export default {
 
   .faq-list__item {
     padding: 0 10px;
-    
   }
   .faq-list__item_text {
     padding: 10px 0;
@@ -210,10 +206,7 @@ export default {
 
   .faq-list__item_answer.visible {
     margin-top: 10px;
-    max-height: 220px;
+    max-height: 240px;
   }
-
 }
-
-
 </style>
