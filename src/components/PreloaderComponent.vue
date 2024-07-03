@@ -208,60 +208,6 @@ import { useRouter } from 'vue-router';
       opacity: 1;
     }
   }
-      @media only screen and (max-width: 1439px) and (min-width: 768px) {
-    .final-svg-image {
-      width: 250px;
-      height: 109px;
-    }
 
-    .svg-container {
-      width: 800px;
-      height: 400px;
-    }
-
-    .svg-container.animate .bottom-left {
-      transform: translate(233px, -48px);
-      transition: transform 1s ease, opacity 1s ease;
-    }
-
-    .svg-container.animate .top-right {
-      transform: translate(-233px, 48px);
-      transition: transform 1s ease, opacity 1s ease;
-    }
-
-    .svg-container.animate-second .bottom-left.final {
-      transform: translate(222px, -35px);
-      transition: transform 1s ease;
-    }
-
-    .svg-container.animate-second .top-right.final {
-      transform: translate(-222px, 35px);
-      transition: transform 1s ease;
-    }
-
-    .svg-container.animate-fourth .final-svg {
-      transform: translate(222px, 35px);
-      opacity: 1;
-      transition: transform 1s ease, opacity 1s;
-    }
-
-    .final-svg {
-      opacity: 0;
-      transform: translate(222px, 35px);
-      transition: opacity 1s;
-    }
-
-    .svg-container.animate-fifth .final-svg {
-      width: 80px;
-      height: 80px;
-      transform: translate(222px, 35px) scale(1);
-      transition: transform 1s ease, width 0.5s, height 0.5s;
-    }
-
-    .svg-container.animate-sixth .final-svg {
-      transform: translate(548%, 190%);
-      transition: transform 1s ease;
-    }
-  }
   </style>
   
