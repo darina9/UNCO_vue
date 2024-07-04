@@ -13,6 +13,11 @@ const routes = [
     name: 'MainPage',
     component: MainPage,
   },
+  
+  {
+    path: '/:catchAll(.*)',
+    redirect: { name: 'PreloaderPage' }
+  }
 ];
 
 const router = createRouter({
