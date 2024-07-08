@@ -73,7 +73,9 @@ export default {
             setTimeout(() => {
               animateSixth.value = true;
               setTimeout(() => {
-                router.push({ name: 'MainPage' });
+               router.push({ name: 'MainPage' }).then(() => {
+                    window.history.replaceState(null, null, '/');
+                  });
               }, 1000); // Ускорение времени
             }, 500); // Ускорение четвертой времени
           }, 700); // Ускорение третьей времени
