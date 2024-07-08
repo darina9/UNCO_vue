@@ -5,12 +5,17 @@
 </template>
 
 <script>
+import { useRouter } from 'vue-router';
+
 export default {
   name: "App",
   created() {
-    if (this.$route.name !== 'PreloaderPage') {
-      this.$router.push({ name: 'PreloaderPage' });
+    const router = useRouter();
+    const currentRoute = router.currentRoute.value;
+
+    if (currentRoute.name !== 'PreloaderPage') {
+      router.push({ name: 'PreloaderPage' });
     }
-  },
+  }
 };
 </script>
