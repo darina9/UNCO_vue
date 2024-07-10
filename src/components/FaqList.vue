@@ -155,8 +155,10 @@ export default {
   top: 20px;
 }
 
-.faq-list__item_btn:hover .path_1 {
-  fill: #a2c33d;
+@media only screen and (min-width: 768px) {
+  .faq-list__item_btn:hover .path_1 {
+    fill: #a2c33d;
+  }
 }
 
 .faq-list__item_question {
@@ -243,3 +245,4 @@ export default {
   }
 }
 </style>
+
