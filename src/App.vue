@@ -13,8 +13,8 @@ export default {
     const router = useRouter();
     const currentRoute = router.currentRoute.value;
 
-    if (currentRoute.name !== 'PreloaderPage') {
-      router.push({ name: 'PreloaderPage' });
+    if (currentRoute.name !== 'PreloaderPage' && currentRoute.name !== 'MainPage') {
+      this.$router.push({ name: 'PreloaderPage' });
     }
   }
 };
