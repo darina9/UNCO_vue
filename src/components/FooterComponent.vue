@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer center">
+  <footer class="footer center id="footer"">
     <div class="footer__top">
     <ul class="footer__links">
       <li class="footer__links_item">
