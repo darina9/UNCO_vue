@@ -1,59 +1,43 @@
 <template>
-    <section class="banner-info ">
-      <div class="banner-info__title">
-        <img
-          class="banner-info__title_img"
-          src="../assets/img/Logo_banner.png"
-          alt="FOOD FUTURES"
-        />
-        <img
-          class="banner-info__title_img-midi"
-          src="../assets/img/Logo_banner_midi.png"
-          alt="FOOD FUTURES"
-        />
-        <img
-          class="banner-info__title_img-mini"
-          src="../assets/img/Logo_banner_mini.png"
-          alt="FOOD FUTURES"
-        />
-        <h4 class="banner-info__title_text title-semibold">
-          {{ $t('banner-info.title') }}
-        </h4>
-      </div>
+  <section class="banner-info">
+    <div class="banner-info__title">
+      <img class="banner-info__title_img" src="../assets/img/Logo_banner.png" alt="FOOD FUTURES" />
+      <img class="banner-info__title_img-midi" src="../assets/img/Logo_banner_midi.png" alt="FOOD FUTURES" />
+      <img class="banner-info__title_img-mini" src="../assets/img/Logo_banner_mini.png" alt="FOOD FUTURES" />
+      <h4 class="banner-info__title_text title-semibold">{{ $t('banner-info.title') }}</h4>
+    </div>
     
-      <div class="banner-info__btn">
+    <div class="banner-info__btn">
       <button class="btn" @click="scrollToFooter">{{ $t('banner-info.button') }}</button>
     </div>
-      <div class="banner-info__quote">
-        <div class="banner-info__quote_left">
-          <blockquote>
-            <h7 class="banner-info__quote_text title-semibold">
-              {{ $t('banner-info.quote.text') }}
-            </h7>
-          </blockquote>
-          <h9 class="banner-info__quote_autor">{{ $t('banner-info.quote.author') }}</h9>
-        </div>
-        <img
-          class="banner-info__quote_img"
-          src="../assets/img/Larry.png"
-          alt="Larry Fink CEO BlackRock"
-        />
+    
+    <div class="banner-info__quote">
+      <div class="banner-info__quote_left">
+        <blockquote>
+          <h7 class="banner-info__quote_text title-semibold">{{ $t('banner-info.quote.text') }}</h7>
+        </blockquote>
+        <h9 class="banner-info__quote_autor">{{ $t('banner-info.quote.author') }}</h9>
       </div>
-    </section>
-  </template>
-  
-  <script>
-  import { useI18n } from 'vue-i18n';
-  
-  export default {
+      <img class="banner-info__quote_img" src="../assets/img/Larry.png" alt="Larry Fink CEO BlackRock" />
+    </div>
+  </section>
+</template>
+
+<script>
+import { useI18n } from 'vue-i18n';
+
+export default {
   name: 'BannerInfo',
   setup() {
     const { t } = useI18n();
 
     const scrollToFooter = () => {
       const footer = document.getElementById('footer');
+      console.log('Footer element:', footer);
       if (footer) {
         footer.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('Footer element not found');
       }
     };
 
@@ -63,7 +47,8 @@
     };
   },
 };
-  </script>
+</script>
+
   <style>
   @import url("../assets/common-styles.css");
   .banner-info {
