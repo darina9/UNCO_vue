@@ -174,8 +174,12 @@
   .banner-info__quote {
     margin-top: 42px;
     justify-content: flex-start;
+    
   }
-
+  .banner-info__quote_autor {
+  margin-bottom: 8px;
+  
+}
   .banner-info__quote_left {
     max-width: 100%;
     padding-left: 50px;
