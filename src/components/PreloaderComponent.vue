@@ -1,4 +1,4 @@
-<template>
+/*<template>
   <div class="preloader-container">
     <img src="../assets/img/unco.svg" class="final-svg-image" alt="final image" />
     <div class="svg-container" :class="{ animate: animate, 'animate-second': animateSecond, 'animate-third': animateThird, 'animate-fourth': animateFourth, 'animate-fifth': animateFifth, 'animate-sixth': animateSixth }">
@@ -346,4 +346,4 @@ export default {
       transform: translate(327%, 138%);
     }
   }
-</style>
+</style>*/
