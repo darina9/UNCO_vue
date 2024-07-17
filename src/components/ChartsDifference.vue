@@ -16,9 +16,9 @@
         </div>
       </div>
       <div class="chart-difference__btn">
-        <button class="btn btn-big">
-          <a href="#contacts">{{ $t('charts_difference.button') }}</a>
-        </button>
+       <button class="btn btn-big" @click="scrollToFooter">
+      {{ $t('charts_difference.button') }}
+    </button>
       </div>
     </section>
   </template>
@@ -47,8 +47,13 @@
   
       const potatoesChartSrc = computed(() => getChartSrc('chart_potatoes'));
       const peachesChartSrc = computed(() => getChartSrc('chart_peaches'));
-  
-      return { t, potatoesChartSrc, peachesChartSrc };
+      const scrollToFooter = () => {
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+      return { t, potatoesChartSrc, peachesChartSrc, scrollToFooter };
     },
   };
   </script>
