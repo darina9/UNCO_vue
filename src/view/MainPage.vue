@@ -1,7 +1,5 @@
 <template>
-  <div class="MainPage">
-    
-
+   <div :class="['main-page', { 'fade-in': fadeIn }]">
     <HeaderComponent/>
     <main class="center">
     <BannerInfo />
@@ -55,9 +53,31 @@ export default {
     FaqList,
     OtherServices,
     FooterComponent
+  },
+  data() {
+    return {
+      fadeIn: false
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.fadeIn = true;
+    }, 200); // Delay for fade-in effect
   }
-}
+};
+
 </script>
+
+<style >@import url("../assets/common-styles.css");
+.main-page {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.main-page.fade-in {
+  opacity: 1;
+}
+</style>
 
 <style >@import url("../assets/common-styles.css");
 </style>
