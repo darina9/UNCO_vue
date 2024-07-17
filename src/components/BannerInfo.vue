@@ -20,9 +20,9 @@
           {{ $t('banner-info.title') }}
         </h4>
       </div>
-      <div class="banner-info__btn">
-        <button class="btn"><a href="#contacts">{{ $t('banner-info.button') }}</a></button>
-      </div>
+     <div class="banner-info__btn">
+      <button class="btn" @click="scrollToFooter">{{ $t('banner-info.button') }}</button>
+    </div>
       <div class="banner-info__quote">
         <div class="banner-info__quote_left">
           <blockquote>
@@ -45,12 +45,23 @@
   import { useI18n } from 'vue-i18n';
   
   export default {
-    name: 'BannerInfo',
-    setup() {
-      const { t } = useI18n();
-      return { t };
-    }
-  };
+  name: 'BannerInfo',
+  setup() {
+    const { t } = useI18n();
+
+    const scrollToFooter = () => {
+      const footer = document.getElementById('footer');
+      if (footer) {
+        footer.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    return {
+      t,
+      scrollToFooter,
+    };
+  },
+};
   </script>
   <style>
   @import url("../assets/common-styles.css");
