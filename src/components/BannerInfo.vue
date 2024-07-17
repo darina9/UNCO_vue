@@ -20,7 +20,8 @@
           {{ $t('banner-info.title') }}
         </h4>
       </div>
-     <div class="banner-info__btn">
+    
+      <div class="banner-info__btn">
       <button class="btn" @click="scrollToFooter">{{ $t('banner-info.button') }}</button>
     </div>
       <div class="banner-info__quote">
