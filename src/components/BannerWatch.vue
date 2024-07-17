@@ -12,9 +12,9 @@
     <div class="banner-watch__time">
       <div class="banner-watch__time_timer" ref="countdown">10:00:00</div>
       <div class="banner-watch__time_btn">
-        <button class="btn">
-          <a href="#contacts">{{ $t('banner_watch.button') }}</a>
-        </button>
+        <button class="btn" @click="scrollToFooter">
+      {{ $t('banner_watch.button') }}
+    </button>
       </div>
     </div>
   </section>
@@ -23,11 +23,13 @@
 <script>
 import { ref, onMounted, onUnmounted, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useRouter } from 'vue-router';
 
 export default {
   name: 'BannerWatch',
   setup() {
     const { t, locale } = useI18n();
+    const router = useRouter();
     const countdown = ref(null);
     const items = ref([]);
 
@@ -80,12 +82,20 @@ export default {
 
     watch(locale, updateItems);
 
+    const scrollToFooter = () => {
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
     return {
       t,
       countdown,
-      items
+      items,
+      scrollToFooter,
     };
-  }
+  },
 };
 </script>
 
