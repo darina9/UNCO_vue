@@ -79,5 +79,4 @@ export default {
 }
 </style>
 
-<style >@import url("../assets/common-styles.css");
-</style>
+
