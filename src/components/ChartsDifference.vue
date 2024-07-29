@@ -1,8 +1,8 @@
 <template>
   <section class="charts-difference">
-    <h5 class="charts-difference__title">
+    <p class="charts-difference__title">
       {{ $t("charts_difference.title") }}
-    </h5>
+    </p>
     <div class="charts-difference__imgs">
       <div class="charts-difference__imgs_left">
         <img
@@ -10,9 +10,9 @@
           src="../assets/img/image_potatoes.png"
           alt="Potatoes"
         />
-        <h6 class="charts-difference__imgs_title">
+        <p class="charts-difference__imgs_title">
           {{ $t("charts_difference.potatoes_title") }}
-        </h6>
+        </p>
         <img
           class="charts-difference__imgs_chart"
           :src="potatoesChartSrc"
@@ -26,9 +26,9 @@
             src="../assets/img/image_peaches.png"
             alt="peaches"
           />
-          <h6 class="charts-difference__imgs_title">
+          <p class="charts-difference__imgs_title">
             {{ $t("charts_difference.peaches_title") }}
-          </h6>
+          </p>
           <img
             class="charts-difference__imgs_chart"
             :src="peachesChartSrc"
