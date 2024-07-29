@@ -1,9 +1,9 @@
 
 <template>
   <section class="workflow-algorithm">
-    <h5 class="workflow-algorithm__title" id="how_it_works">
+    <p class="workflow-algorithm__title" id="how_it_works">
       {{ $t("workflow_algorithm.title") }}
-    </h5>
+    </p>
     <ul class="workflow-algorithm__list" ref="list">
       <li
         v-for="(item, index) in items"
@@ -17,7 +17,7 @@
             </svg>
           </div>
         </div>
-        <h6 class="workflow-algorithm__item_text">{{ item.text }}</h6>
+        <p class="workflow-algorithm__item_text">{{ item.text }}</p>
         <svg v-if="index === 0" class="arrow arrow_1_2" width="80" height="80">
           <use xlink:href="#arrow"></use>
         </svg>
@@ -142,7 +142,7 @@ export default {
 
             sortedItems.forEach((item, index) => {
               setTimeout(() => {
-                item.classList.add('visible');
+                item.classList.add("visible");
               }, index * 200);
             });
 
@@ -161,8 +161,8 @@ export default {
     };
 
     const updateItems = () => {
-      document.querySelectorAll('.workflow-algorithm__item').forEach(item => {
-        item.classList.remove('visible');
+      document.querySelectorAll(".workflow-algorithm__item").forEach((item) => {
+        item.classList.remove("visible");
       });
       createObserver();
     };
@@ -204,7 +204,6 @@ export default {
 .workflow-algorithm {
   margin-top: 100px;
   position: relative;
-  
 }
 
 .workflow-algorithm__list {
@@ -394,7 +393,6 @@ export default {
     margin-bottom: 60px;
     width: 100%;
     padding: 10px 0;
-    
   }
   .workflow-algorithm__item_text {
     font-size: 18px;
@@ -421,7 +419,7 @@ export default {
     height: 300px;
   }
   .workflow_3,
-  .workflow_4{
+  .workflow_4 {
     margin-top: 0;
   }
 
@@ -439,15 +437,15 @@ export default {
   }
   .arrow_1_2 {
     top: 110%;
-    left:43% ;  
+    left: 43%;
   }
-  .arrow_2_3{
+  .arrow_2_3 {
     top: 110%;
-    left:43% ; 
+    left: 43%;
   }
-  .arrow_3_4{
+  .arrow_3_4 {
     top: 110%;
-    left:43% ; 
+    left: 43%;
   }
 }
 </style>
