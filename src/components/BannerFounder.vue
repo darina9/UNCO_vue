@@ -1,33 +1,33 @@
 <template>
-    <section class="banner-founder">
-      <img
-        class="banner-founder__foto"
-        alt="Andrew Yusupov Founder UNCO"
-        src="../assets/img/image andrew.png"
-      />
-      <div class="banner-founder__text">
-        <blockquote>
-          <h6 class="banner-founder__text_quote">
-            {{ $t('banner_founder.quote') }}
-          </h6>
-        </blockquote>
-        <h9 class="banner-founder__text_autor">
-          {{ $t('banner_founder.author') }}
-        </h9>
-      </div>
-    </section>
-  </template>
+  <section class="banner-founder">
+    <img
+      class="banner-founder__foto"
+      alt="Andrew Yusupov Founder UNCO"
+      src="../assets/img/image andrew.png"
+    />
+    <div class="banner-founder__text">
+      <blockquote>
+        <p class="banner-founder__text_quote">
+          {{ $t("banner_founder.quote") }}
+        </p>
+      </blockquote>
+      <p class="banner-founder__text_autor">
+        {{ $t("banner_founder.author") }}
+      </p>
+    </div>
+  </section>
+</template>
   <script>
-  import { useI18n } from 'vue-i18n';
+import { useI18n } from "vue-i18n";
 
 export default {
-  name: 'BannerFounder',
+  name: "BannerFounder",
   setup() {
     const { t } = useI18n();
     return {
-      t
+      t,
     };
-  }
+  },
 };
 </script>
 <style >
@@ -80,7 +80,7 @@ export default {
   background-size: cover;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-    .banner-founder {
+  .banner-founder {
     margin-top: 100px;
     padding: 20px 20px;
     gap: 20px;
@@ -108,7 +108,7 @@ export default {
   }
 }
 @media only screen and (max-width: 767px) {
-    .banner-founder {
+  .banner-founder {
     margin-top: 60px;
     padding: 0;
     flex-direction: column;
@@ -140,6 +140,4 @@ export default {
     background-image: url("../assets/img/Vector\ 25.svg");
   }
 }
-
-
 </style>
