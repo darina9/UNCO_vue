@@ -1,6 +1,6 @@
 <template>
   <section class="faq-list">
-    <h5 class="faq-list__title">{{ $t("faq_list.title") }}</h5>
+    <p class="faq-list__title">{{ $t("faq_list.title") }}</p>
     <ul class="faq-list__list">
       <li v-for="(item, index) in faqs" :key="index" class="faq-list__item">
         <button
@@ -38,10 +38,10 @@
           </svg>
         </button>
         <div class="faq-list__item_text">
-          <h6 class="faq-list__item_question">{{ item.question }}</h6>
-          <h6 class="faq-list__item_answer" :class="{ visible: item.visible }">
+          <p class="faq-list__item_question">{{ item.question }}</p>
+          <p class="faq-list__item_answer" :class="{ visible: item.visible }">
             {{ item.answer }}
-          </h6>
+          </p>
         </div>
       </li>
     </ul>
@@ -83,10 +83,8 @@ export default {
       ];
     };
 
-    // Initialize FAQs
     updateFaqs();
 
-    // Watch for changes in locale
     watch(locale, () => {
       updateFaqs();
     });
@@ -245,4 +243,5 @@ export default {
   }
 }
 </style>
+
 
