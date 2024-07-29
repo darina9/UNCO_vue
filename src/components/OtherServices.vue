@@ -142,7 +142,9 @@ export default {
   width: 100%;
   display: block;
 }
-
+.other_services__item_btn >a > .btn{
+  font-size: 30px;
+}
 .large {
   grid-column: span 6; /* Блок 1 занимает 6 столбцов */
 }
