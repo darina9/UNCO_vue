@@ -82,8 +82,14 @@ import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 
 export default {
-  name: "PreloaderPage",
-  setup() {
+  name: "PreloaderComponent",
+  props: {
+    lang: {
+      type: String,
+      required: true,
+    },
+  },
+  setup(props, { emit }) {
     const router = useRouter();
     const showLeaf = ref(false);
     const expandLeaf = ref(false);
@@ -98,28 +104,37 @@ export default {
     const moveToTopLeft = ref(false);
 
     onMounted(() => {
+      console.log("Preloader mounted with language:", props.lang);
       setTimeout(() => {
         showLeaf.value = true;
+        console.log("Step 1: showLeaf");
         setTimeout(() => {
           expandLeaf.value = true;
           fadeOut.value = true;
+          console.log("Step 2: expandLeaf and fadeOut");
           setTimeout(() => {
             moveDownLeaf.value = true;
+            console.log("Step 3: moveDownLeaf");
             setTimeout(() => {
               fadeOutLeaf.value = true;
+              console.log("Step 4: fadeOutLeaf");
               setTimeout(() => {
                 showSecondLeaf.value = true;
                 showThirdLeaf.value = true;
+                console.log("Step 5: showSecondLeaf and showThirdLeaf");
                 setTimeout(() => {
                   animatePath.value = true;
                   transitionStroke.value = true;
+                  console.log("Step 6: animatePath and transitionStroke");
                   setTimeout(() => {
                     moveToBottomRight.value = true;
                     moveToTopLeft.value = true;
+                    console.log("Step 7: moveToBottomRight and moveToTopLeft");
                     setTimeout(() => {
-                      router.replace({ name: "MainPage" }).then(() => {
-                        window.history.replaceState(null, null, "/");
-                      });
+                      emit("loaded");
+                      console.log(
+                        'Preloader finished, emitting "loaded" event.'
+                      );
                     }, 800);
                   }, 500); // Время для начала перемещения SVG в углы
                 }, 500); // Время для начала анимации после появления новых SVG
