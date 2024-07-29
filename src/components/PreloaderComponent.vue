@@ -1,4 +1,4 @@
- <template>
+<template>
   <div class="preloader-container">
     <img
       src="../assets/img/unco.svg"
@@ -339,6 +339,7 @@ html {
   }
 }
 </style>
+
 <!-- <template>
   <div class="preloader-container">
     <img src="../assets/img/unco.svg" class="final-svg-image" alt="final image" />
