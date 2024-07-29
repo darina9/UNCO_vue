@@ -1,40 +1,64 @@
 <template>
   <section class="banner-info">
     <div class="banner-info__title">
-      <img class="banner-info__title_img" src="../assets/img/Logo_banner.png" alt="FOOD FUTURES" />
-      <img class="banner-info__title_img-midi" src="../assets/img/Logo_banner_midi.png" alt="FOOD FUTURES" />
-      <img class="banner-info__title_img-mini" src="../assets/img/Logo_banner_mini.png" alt="FOOD FUTURES" />
-      <h4 class="banner-info__title_text title-semibold">{{ $t('banner-info.title') }}</h4>
+      <img
+        class="banner-info__title_img"
+        src="../assets/img/Logo_banner.png"
+        alt="FOOD FUTURES"
+      />
+      <img
+        class="banner-info__title_img-midi"
+        src="../assets/img/Logo_banner_midi.png"
+        alt="FOOD FUTURES"
+      />
+      <img
+        class="banner-info__title_img-mini"
+        src="../assets/img/Logo_banner_mini.png"
+        alt="FOOD FUTURES"
+      />
+      <h4 class="banner-info__title_text title-semibold">
+        {{ $t("banner-info.title") }}
+      </h4>
     </div>
-    
+
     <div class="banner-info__btn">
-      <button class="btn" @click="scrollToFooter">{{ $t('banner-info.button') }}</button>
+      <button class="btn" @click="scrollToFooter">
+        {{ $t("banner-info.button") }}
+      </button>
     </div>
-    
+
     <div class="banner-info__quote">
       <div class="banner-info__quote_left">
         <blockquote>
-          <h7 class="banner-info__quote_text title-semibold">{{ $t('banner-info.quote.text') }}</h7>
+          <p class="banner-info__quote_text title-semibold">
+            {{ $t("banner-info.quote.text") }}
+          </p>
         </blockquote>
-        <h9 class="banner-info__quote_autor">{{ $t('banner-info.quote.author') }}</h9>
+        <p class="banner-info__quote_autor">
+          {{ $t("banner-info.quote.author") }}
+        </p>
       </div>
-      <img class="banner-info__quote_img" src="../assets/img/Larry.png" alt="Larry Fink CEO BlackRock" />
+      <img
+        class="banner-info__quote_img"
+        src="../assets/img/Larry.png"
+        alt="Larry Fink CEO BlackRock"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import { useI18n } from 'vue-i18n';
+import { useI18n } from "vue-i18n";
 
 export default {
-  name: 'BannerInfo',
+  name: "BannerInfo",
   setup() {
     const { t } = useI18n();
 
     const scrollToFooter = () => {
-      const footer = document.getElementById('footer');
+      const footer = document.getElementById("footer");
       if (footer) {
-        footer.scrollIntoView({ behavior: 'smooth' });
+        footer.scrollIntoView({ behavior: "smooth" });
       }
     };
 
@@ -47,8 +71,8 @@ export default {
 </script>
 
   <style>
-  @import url("../assets/common-styles.css");
-  .banner-info {
+@import url("../assets/common-styles.css");
+.banner-info {
   margin-top: 40px;
   position: relative;
 }
@@ -125,13 +149,12 @@ export default {
   display: flex;
   justify-content: end;
   margin-top: 27px;
-  
 }
 .banner-info__quote_left {
   max-width: 41%;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-.banner-info__title {
+  .banner-info__title {
     flex-direction: column;
     padding: 0 40px;
   }
@@ -156,18 +179,17 @@ export default {
   .banner-info__quote {
     margin-top: 42px;
     justify-content: flex-start;
-    
   }
   .banner-info__quote_autor {
-  margin-bottom: 8px;
-  
-}
+    margin-bottom: 8px;
+  }
   .banner-info__quote_left {
     max-width: 100%;
     padding-left: 50px;
-  }}
-  @media only screen and (max-width: 767px) {
-    .banner-info {
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-info {
     margin-top: 20px;
   }
   .banner-info__title {
@@ -239,6 +261,5 @@ export default {
     width: 80px;
     right: 0;
   }
-  }
-
+}
 </style>
