@@ -1,44 +1,54 @@
 <template>
-    <section class="banner-farmer">
-      <img class="banner-farmer__img" src="@/assets/img/image_shop_unco.png" alt="Shop Unco" />
-      <div class="banner-farmer__right">
-        <ul class="banner-farmer__list">
-          <li class="banner-farmer__item banner-farmer_column item-1">
-            <h2 class="banner-farmer__item_title">67 €</h2>
-            <h7 class="banner-farmer__item_text">{{ $t('banner_farmer.average_order_value_text') }}</h7>
-          </li>
-          <li class="banner-farmer__item banner-farmer_column item-2">
-            <h2 class="banner-farmer__item_title">54.8%</h2>
-            <h7 class="banner-farmer__item_text">{{ $t('banner_farmer.average_markup_text') }}</h7>
-          </li>
-          <li class="banner-farmer__item banner-farmer_flex item-3">
-            <h2 class="banner-farmer__item_title">2.4</h2>
-            <h7 class="banner-farmer__item_text">{{ $t('banner_farmer.orders_per_month_text') }}</h7>
-          </li>
-        </ul>
-        <h9 class="banner-farmer__footnote">{{ $t('banner_farmer.footnote') }}</h9>
-      </div>
-    </section>
-  </template>
+  <section class="banner-farmer">
+    <img
+      class="banner-farmer__img"
+      src="@/assets/img/image_shop_unco.png"
+      alt="Shop Unco"
+    />
+    <div class="banner-farmer__right">
+      <ul class="banner-farmer__list">
+        <li class="banner-farmer__item banner-farmer_column item-1">
+          <h2 class="banner-farmer__item_title">67 €</h2>
+          <p class="banner-farmer__item_text">
+            {{ $t("banner_farmer.average_order_value_text") }}
+          </p>
+        </li>
+        <li class="banner-farmer__item banner-farmer_column item-2">
+          <h2 class="banner-farmer__item_title">54.8%</h2>
+          <p class="banner-farmer__item_text">
+            {{ $t("banner_farmer.average_markup_text") }}
+          </p>
+        </li>
+        <li class="banner-farmer__item banner-farmer_flex item-3">
+          <h2 class="banner-farmer__item_title">2.4</h2>
+          <p class="banner-farmer__item_text">
+            {{ $t("banner_farmer.orders_per_month_text") }}
+          </p>
+        </li>
+      </ul>
+      <p class="banner-farmer__footnote">{{ $t("banner_farmer.footnote") }}</p>
+    </div>
+  </section>
+</template>
   
   
   <script>
-  import { useI18n } from 'vue-i18n';
-  
-  export default {
-    name: 'BannerFarmer',
-    setup() {
-      const { t } = useI18n();
-  
-      return {
-        t,
-      };
-    },
-  };
-  </script>
+import { useI18n } from "vue-i18n";
+
+export default {
+  name: "BannerFarmer",
+  setup() {
+    const { t } = useI18n();
+
+    return {
+      t,
+    };
+  },
+};
+</script>
   <style >
-  @import url("../assets/common-styles.css");
-  .banner-farmer {
+@import url("../assets/common-styles.css");
+.banner-farmer {
   display: flex;
   gap: 10px;
   margin-top: 100px;
@@ -70,14 +80,13 @@
 .banner-farmer_column {
   flex-direction: column;
   align-items: center;
-
 }
 .item-2 > .banner-farmer__item_text {
-   margin-left: 30px;
+  margin-left: 30px;
 }
 .banner-farmer__item {
   position: relative;
- 
+
   display: flex;
   align-items: center;
 }
@@ -109,7 +118,7 @@
   background-size: cover;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-    .banner-farmer {
+  .banner-farmer {
     flex-direction: column;
   }
   .banner-farmer__img {
@@ -156,15 +165,14 @@
     flex-direction: row;
     margin-top: 40px;
   }
-
 }
 @media only screen and (max-width: 767px) {
-    .banner-farmer {
+  .banner-farmer {
     margin-top: 0;
     flex-direction: column;
     gap: 10px;
   }
-    .banner-farmer__img {
+  .banner-farmer__img {
     height: auto;
     width: 302px;
   }
@@ -190,7 +198,5 @@
   .banner-farmer__footnote {
     font-size: 14px;
   }
-
 }
-
-  </style>
+</style>
