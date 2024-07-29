@@ -1,32 +1,44 @@
 <template>
   <section class="banner-watch" id="watch">
     <div class="banner-watch__info">
-      <h5 class="banner-watch__info_title">{{ $t('banner_watch.title') }}</h5>
+      <p class="banner-watch__info_title">{{ $t("banner_watch.title") }}</p>
       <ul class="banner-watch__info_list">
-        <li class="banner-watch__info_item" v-for="(item, index) in items" :key="index">
-          <img class="svg" :src="require(`../assets/img/apple.svg`)" alt="icon-profit" width="24" height="40">
-          <h6 class="banner-watch__info_text">{{ item }}</h6>
+        <li
+          class="banner-watch__info_item"
+          v-for="(item, index) in items"
+          :key="index"
+        >
+          <img
+            class="svg"
+            :src="require(`../assets/img/apple.svg`)"
+            alt="icon-profit"
+            width="24"
+            height="40"
+          />
+          <p class="banner-watch__info_text">{{ item }}</p>
         </li>
       </ul>
     </div>
     <div class="banner-watch__time">
       <div class="banner-watch__time_timer" ref="countdown">10:00:00</div>
       <div class="banner-watch__time_btn">
-        <button class="btn" @click="scrollToFooter">
-      {{ $t('banner_watch.button') }}
-    </button>
+        <div class="banner-watch__time_btn">
+          <button class="btn" @click="scrollToFooter">
+            {{ $t("banner_watch.button") }}
+          </button>
+        </div>
       </div>
     </div>
   </section>
 </template>
   
 <script>
-import { ref, onMounted, onUnmounted, watch } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useRouter } from 'vue-router';
+import { ref, onMounted, onUnmounted, watch } from "vue";
+import { useI18n } from "vue-i18n";
+import { useRouter } from "vue-router";
 
 export default {
-  name: 'BannerWatch',
+  name: "BannerWatch",
   setup() {
     const { t, locale } = useI18n();
     const router = useRouter();
@@ -35,16 +47,16 @@ export default {
 
     const updateItems = () => {
       items.value = [
-        t('banner_watch.items.0'),
-        t('banner_watch.items.1'),
-        t('banner_watch.items.2'),
-        t('banner_watch.items.3'),
+        t("banner_watch.items.0"),
+        t("banner_watch.items.1"),
+        t("banner_watch.items.2"),
+        t("banner_watch.items.3"),
       ];
     };
 
     const updateCountdown = () => {
       if (countdown.value) {
-        const timeParts = countdown.value.innerText.split(':');
+        const timeParts = countdown.value.innerText.split(":");
         let hours = parseInt(timeParts[0]);
         let minutes = parseInt(timeParts[1]);
         let seconds = parseInt(timeParts[2]);
@@ -61,7 +73,9 @@ export default {
           hours--;
         }
 
-        countdown.value.innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        countdown.value.innerText = `${String(hours).padStart(2, "0")}:${String(
+          minutes
+        ).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 
         if (hours === 0 && minutes === 0 && seconds === 0) {
           clearInterval(countdownInterval);
@@ -83,9 +97,9 @@ export default {
     watch(locale, updateItems);
 
     const scrollToFooter = () => {
-      const footer = document.querySelector('footer');
+      const footer = document.querySelector("footer");
       if (footer) {
-        footer.scrollIntoView({ behavior: 'smooth' });
+        footer.scrollIntoView({ behavior: "smooth" });
       }
     };
 
@@ -100,8 +114,8 @@ export default {
 </script>
 
   <style >
-  @import url("../assets/common-styles.css");
-  .banner-watch {
+@import url("../assets/common-styles.css");
+.banner-watch {
   margin-top: 100px;
   display: flex;
   gap: 120px;
@@ -167,7 +181,7 @@ export default {
   background-size: cover;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-    .banner-watch {
+  .banner-watch {
     margin-top: 110px;
     flex-direction: column;
     gap: 40px;
@@ -192,7 +206,7 @@ export default {
   }
 }
 @media only screen and (max-width: 767px) {
-    .banner-watch {
+  .banner-watch {
     margin-top: 60px;
     flex-direction: column;
     gap: 20px;
@@ -222,5 +236,4 @@ export default {
     width: 302px;
   }
 }
-
-  </style>
+</style>
