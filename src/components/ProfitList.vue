@@ -1,136 +1,136 @@
 
-  <template>
-    <section class="profit-list">
-      <h5 class="profit-list__title">{{ $t('profit_list.title') }}</h5>
-      <ul class="profit-list__list" ref="list">
-        <li
-          class="profit-list__item"
-          v-for="(item, index) in sortedItems"
-          :key="index"
-          :class="item.class"
-        >
-          <h6 class="profit-list__item_text">{{ item.text }}</h6>
-        </li>
-      </ul>
-    </section>
-  </template>
+ <template>
+  <section class="profit-list">
+    <p class="profit-list__title">{{ $t("profit_list.title") }}</p>
+    <ul class="profit-list__list" ref="list">
+      <li
+        class="profit-list__item"
+        v-for="(item, index) in sortedItems"
+        :key="index"
+        :class="item.class"
+      >
+        <p class="profit-list__item_text">{{ item.text }}</p>
+      </li>
+    </ul>
+  </section>
+</template>
   
   <script>
-  import { ref, onMounted, onUnmounted, computed, watch } from 'vue';
-  import { useI18n } from 'vue-i18n';
-  
-  export default {
-    name: 'ProfitList',
-    setup() {
-      const { t, locale } = useI18n();
-      const list = ref(null);
-      const items = ref([]);
-  
-      const updateItems = () => {
-        items.value = [
-          {
-            text: t('profit_list.items.0'),
-            class: '',
-            orderDesktop: 1,
-            orderTablet: 1,
-          },
-          {
-            text: t('profit_list.items.1'),
-            class: '',
-            orderDesktop: 2,
-            orderTablet: 3,
-          },
-          {
-            text: t('profit_list.items.2'),
-            class: '',
-            orderDesktop: 3,
-            orderTablet: 2,
-          },
-          {
-            text: t('profit_list.items.3'),
-            class: '',
-            orderDesktop: 4,
-            orderTablet: 4,
-          },
-          {
-            text: t('profit_list.items.4'),
-            class: '',
-            orderDesktop: 5,
-            orderTablet: 5,
-          },
-        ];
-      };
-  
-      const sortedItems = computed(() => {
-        const isTablet = window.innerWidth <= 768;
-        return items.value.slice().sort((a, b) => {
-          const orderA = isTablet ? a.orderTablet : a.orderDesktop;
-          const orderB = isTablet ? b.orderTablet : b.orderDesktop;
-          return orderA - orderB;
+import { ref, onMounted, onUnmounted, computed, watch } from "vue";
+import { useI18n } from "vue-i18n";
+
+export default {
+  name: "ProfitList",
+  setup() {
+    const { t, locale } = useI18n();
+    const list = ref(null);
+    const items = ref([]);
+
+    const updateItems = () => {
+      items.value = [
+        {
+          text: t("profit_list.items.0"),
+          class: "",
+          orderDesktop: 1,
+          orderTablet: 1,
+        },
+        {
+          text: t("profit_list.items.1"),
+          class: "",
+          orderDesktop: 2,
+          orderTablet: 3,
+        },
+        {
+          text: t("profit_list.items.2"),
+          class: "",
+          orderDesktop: 3,
+          orderTablet: 2,
+        },
+        {
+          text: t("profit_list.items.3"),
+          class: "",
+          orderDesktop: 4,
+          orderTablet: 4,
+        },
+        {
+          text: t("profit_list.items.4"),
+          class: "",
+          orderDesktop: 5,
+          orderTablet: 5,
+        },
+      ];
+    };
+
+    const sortedItems = computed(() => {
+      const isTablet = window.innerWidth <= 768;
+      return items.value.slice().sort((a, b) => {
+        const orderA = isTablet ? a.orderTablet : a.orderDesktop;
+        const orderB = isTablet ? b.orderTablet : b.orderDesktop;
+        return orderA - orderB;
+      });
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+    };
+
+    let observer;
+
+    const createObserver = () => {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let delay = 0;
+
+            sortedItems.value.forEach((item, index) => {
+              setTimeout(() => {
+                items.value[index].class = "visible";
+              }, delay);
+
+              delay += 200;
+            });
+
+            observer.unobserve(entry.target);
+          }
         });
-      });
-  
-      const observerOptions = {
-        threshold: 0.1,
-      };
-  
-      let observer;
-  
-      const createObserver = () => {
-        observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              let delay = 0;
-  
-              sortedItems.value.forEach((item, index) => {
-                setTimeout(() => {
-                  items.value[index].class = 'visible';
-                }, delay);
-  
-                delay += 200;
-              });
-  
-              observer.unobserve(entry.target);
-            }
-          });
-        }, observerOptions);
-  
-        observer.observe(list.value);
-      };
-  
-      const disconnectObserver = () => {
-        if (observer) {
-          observer.disconnect();
-        }
-      };
-  
-      onMounted(() => {
-        updateItems();
-        createObserver();
-      });
-  
-      onUnmounted(() => {
-        disconnectObserver();
-      });
-  
-      watch(locale, () => {
-        updateItems();
-        disconnectObserver();
-        createObserver();
-      });
-  
-      return {
-        t,
-        list,
-        sortedItems,
-      };
-    },
-  };
-  </script>
+      }, observerOptions);
+
+      observer.observe(list.value);
+    };
+
+    const disconnectObserver = () => {
+      if (observer) {
+        observer.disconnect();
+      }
+    };
+
+    onMounted(() => {
+      updateItems();
+      createObserver();
+    });
+
+    onUnmounted(() => {
+      disconnectObserver();
+    });
+
+    watch(locale, () => {
+      updateItems();
+      disconnectObserver();
+      createObserver();
+    });
+
+    return {
+      t,
+      list,
+      sortedItems,
+    };
+  },
+};
+</script>
   
   <style >
-  @import url("../assets/common-styles.css");
-  .profit-list {
+@import url("../assets/common-styles.css");
+.profit-list {
   margin-top: 97px;
 }
 .profit-list__title {
@@ -175,7 +175,7 @@
   opacity: 1;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-    .profit-list__title {
+  .profit-list__title {
     font-size: 24px;
   }
   .profit-list__list {
@@ -212,7 +212,7 @@
   }
 }
 @media only screen and (max-width: 767px) {
-    .profit-list {
+  .profit-list {
     margin-top: 60px;
   }
 
@@ -239,4 +239,4 @@
     padding: 10px 10px;
   }
 }
-  </style>
+</style>
