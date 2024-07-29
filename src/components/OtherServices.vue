@@ -1,6 +1,6 @@
 <template>
   <section class="other_services">
-    <h5 class="other_services__title">{{ $t("other_services.title") }}</h5>
+    <p class="other_services__title">{{ $t("other_services.title") }}</p>
     <ul class="other_services__list">
       <li class="other_services__item large">
         <img
@@ -64,7 +64,7 @@
           alt="Ecopoints"
         />
         <div class="other_services__item_btn height">
-          <a href="https://unco.market" target="_blank">
+          <a href="http://unco.bio" target="_blank">
             <button class="btn">{{ $t("other_services.ecopoints") }}</button>
           </a>
         </div>
@@ -142,9 +142,10 @@ export default {
   width: 100%;
   display: block;
 }
-.other_services__item_btn >a > .btn{
+.other_services__item_btn > a > .btn {
   font-size: 30px;
 }
+
 .large {
   grid-column: span 6; /* Блок 1 занимает 6 столбцов */
 }
