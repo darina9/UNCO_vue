@@ -2,27 +2,41 @@
   <section class="profit-chart">
     <div class="profit-chart__text">
       <h3 class="profit-chart__text_info">
-        {{ $t('profit_chart.info') }}
+        {{ $t("profit_chart.info") }}
       </h3>
       <ul class="profit-chart__text_list">
-        <li class="profit-chart__text_item" v-for="(item, index) in items" :key="index">
-          <img :class="item.class" :src="require(`../assets/img/apple.svg`)" alt="icon-profit" width="24" height="40">
-          <h6 class="profit-chart__text_item-text" v-html="item.text"></h6>
+        <li
+          class="profit-chart__text_item"
+          v-for="(item, index) in items"
+          :key="index"
+        >
+          <img
+            :class="item.class"
+            :src="require(`../assets/img/apple.svg`)"
+            alt="icon-profit"
+            width="24"
+            height="40"
+          />
+          <p class="profit-chart__text_item-text" v-html="item.text"></p>
         </li>
       </ul>
     </div>
     <div class="profit-chart__img">
-      <img :src="imgSrc" :class="['profit-chart__img', imgClass]" alt="profit chart" />
+      <img
+        :src="imgSrc"
+        :class="['profit-chart__img', imgClass]"
+        alt="profit chart"
+      />
     </div>
   </section>
 </template>
   
 <script>
-import { useI18n } from 'vue-i18n';
-import { ref, watch, computed, onMounted, onUnmounted } from 'vue';
+import { useI18n } from "vue-i18n";
+import { ref, watch, computed, onMounted, onUnmounted } from "vue";
 
 export default {
-  name: 'ProfitChart',
+  name: "ProfitChart",
   setup() {
     const { t, locale } = useI18n();
     const items = ref([]);
@@ -30,17 +44,17 @@ export default {
     const updateItems = () => {
       items.value = [
         {
-          class: 'apple-exp',
-          text: t('profit_chart.items.0')
+          class: "apple-exp",
+          text: t("profit_chart.items.0"),
         },
         {
-          class: '',
-          text: t('profit_chart.items.1')
+          class: "",
+          text: t("profit_chart.items.1"),
         },
         {
-          class: 'apple-exp-mob',
-          text: t('profit_chart.items.2')
-        }
+          class: "apple-exp-mob",
+          text: t("profit_chart.items.2"),
+        },
       ];
     };
 
@@ -58,11 +72,11 @@ export default {
 
     const getImgClass = () => {
       if (window.innerWidth >= 1440) {
-        return 'big';
+        return "big";
       } else if (window.innerWidth >= 768) {
-        return 'midi';
+        return "midi";
       } else {
-        return 'mini';
+        return "mini";
       }
     };
 
@@ -75,23 +89,25 @@ export default {
     };
 
     watch(locale, updateItems, { immediate: true });
-    watch([currentLang, () => window.innerWidth], updateImg, { immediate: true });
+    watch([currentLang, () => window.innerWidth], updateImg, {
+      immediate: true,
+    });
 
     onMounted(() => {
-      window.addEventListener('resize', updateImg);
+      window.addEventListener("resize", updateImg);
     });
 
     onUnmounted(() => {
-      window.removeEventListener('resize', updateImg);
+      window.removeEventListener("resize", updateImg);
     });
 
     return {
       t,
       items,
       imgSrc,
-      imgClass
+      imgClass,
     };
-  }
+  },
 };
 </script>
 
@@ -105,7 +121,6 @@ export default {
   align-items: center;
   gap: 10px;
 }
-
 
 .profit-chart__text_list {
   box-sizing: border-box;
@@ -152,7 +167,7 @@ export default {
   display: none;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-    .profit-chart {
+  .profit-chart {
     margin-top: 0;
   }
   .profit-chart__text {
@@ -176,10 +191,9 @@ export default {
   .profit-chart__img-midi {
     display: block;
   }
-
 }
 @media only screen and (max-width: 767px) {
-    .profit-chart {
+  .profit-chart {
     margin-top: 78px;
   }
   .profit-chart__text {
@@ -187,7 +201,7 @@ export default {
     flex-direction: column;
     align-items: center;
   }
- 
+
   .profit-chart__text_list {
     /* flex: 1; */
     box-sizing: border-box;
@@ -223,7 +237,7 @@ export default {
     font-weight: 600;
     line-height: 166%;
   }
- 
+
   .profit-chart__img {
     margin-top: 30px;
     display: flex;
@@ -231,7 +245,6 @@ export default {
   }
   .profit-chart__img-mini {
     display: block;
-    
   }
 }
 </style>  
