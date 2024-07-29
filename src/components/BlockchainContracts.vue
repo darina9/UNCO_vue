@@ -1,8 +1,8 @@
 <template>
   <section class="blockchain-contracts">
-    <h5 class="blockchain-contracts__title">
-      {{ $t('blockchain-contracts.title') }}
-    </h5>
+    <p class="blockchain-contracts__title">
+      {{ $t("blockchain-contracts.title") }}
+    </p>
     <ul class="blockchain-contracts__list" ref="list">
       <li
         class="blockchain-contracts__item"
@@ -13,58 +13,60 @@
         :data-order-tablet="item.orderTablet"
         :class="{ visible: item.visible }"
       >
-        <h6 class="blockchain-contracts__item_text">{{ $t(`blockchain-contracts.items.${index}`) }}</h6>
+        <p class="blockchain-contracts__item_text">
+          {{ $t(`blockchain-contracts.items.${index}`) }}
+        </p>
       </li>
     </ul>
   </section>
 </template>
 
 <script>
-import { ref, onMounted, onUnmounted, watch } from 'vue';
-import { useI18n } from 'vue-i18n';
+import { ref, onMounted, onUnmounted, watch } from "vue";
+import { useI18n } from "vue-i18n";
 
 export default {
-  name: 'BlockchainContracts',
+  name: "BlockchainContracts",
   setup() {
     const { t, locale } = useI18n();
     const items = ref([
       {
-        text: 'Fast',
+        text: "Fast",
         orderDesktop: 1,
         orderMobile: 1,
         orderTablet: 1,
         visible: false,
       },
       {
-        text: 'Secure',
+        text: "Secure",
         orderDesktop: 2,
         orderMobile: 2,
         orderTablet: 2,
         visible: false,
       },
       {
-        text: 'Transparent and immutable',
+        text: "Transparent and immutable",
         orderDesktop: 3,
         orderMobile: 3,
         orderTablet: 4,
         visible: false,
       },
       {
-        text: 'Worldwide technology',
+        text: "Worldwide technology",
         orderDesktop: 4,
         orderMobile: 4,
         orderTablet: 5,
         visible: false,
       },
       {
-        text: 'Cheap (even for small quantities of food)',
+        text: "Cheap (even for small quantities of food)",
         orderDesktop: 5,
         orderMobile: 5,
         orderTablet: 6,
         visible: false,
       },
       {
-        text: 'Efficient with minimal intermediaries',
+        text: "Efficient with minimal intermediaries",
         orderDesktop: 6,
         orderMobile: 6,
         orderTablet: 3,
@@ -86,12 +88,22 @@ export default {
           if (entry.isIntersecting) {
             let sortedItems = Array.from(list.value.children);
 
-            const isTablet = window.matchMedia("(max-width: 1439px) and (min-width: 768px)").matches;
+            const isTablet = window.matchMedia(
+              "(max-width: 1439px) and (min-width: 768px)"
+            ).matches;
             const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
             sortedItems.sort((a, b) => {
-              const orderA = isTablet ? parseInt(a.dataset.orderTablet) : isMobile ? parseInt(a.dataset.orderMobile) : parseInt(a.dataset.orderDesktop);
-              const orderB = isTablet ? parseInt(b.dataset.orderTablet) : isMobile ? parseInt(b.dataset.orderMobile) : parseInt(b.dataset.orderDesktop);
+              const orderA = isTablet
+                ? parseInt(a.dataset.orderTablet)
+                : isMobile
+                ? parseInt(a.dataset.orderMobile)
+                : parseInt(a.dataset.orderDesktop);
+              const orderB = isTablet
+                ? parseInt(b.dataset.orderTablet)
+                : isMobile
+                ? parseInt(b.dataset.orderMobile)
+                : parseInt(b.dataset.orderDesktop);
               return orderA - orderB;
             });
 
@@ -149,8 +161,8 @@ export default {
 </script>
   
   <style >
-  @import url("../assets/common-styles.css");
-  .blockchain-contracts {
+@import url("../assets/common-styles.css");
+.blockchain-contracts {
   margin-top: 100px;
 }
 .blockchain-contracts__title {
@@ -212,7 +224,7 @@ export default {
   opacity: 1;
 }
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
-    .blockchain-contracts__title {
+  .blockchain-contracts__title {
     font-size: 24px;
     width: 80%;
   }
@@ -253,10 +265,9 @@ export default {
     grid-column: span 12;
     grid-row: 3;
   }
- 
-} 
+}
 @media only screen and (max-width: 767px) {
-    .blockchain-contracts {
+  .blockchain-contracts {
     margin-top: 60px;
   }
   .blockchain-contracts__title {
