@@ -19,7 +19,7 @@ const routes = [
     }
   },
   {
-    path: '/:lang/not-found',
+    path: '/:lang(.*)',
     name: 'NotFound',
     component: NotFound,
   },
@@ -62,3 +62,4 @@ function setCookie(name, value, days) {
 }
 
 export default router;
+
