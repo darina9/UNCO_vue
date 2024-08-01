@@ -242,7 +242,7 @@ export default {
     padding: 10px 0;
   }
   .blockchain-contracts__item:nth-child(1) {
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: 1;
   }
   .blockchain-contracts__item:nth-child(2) {
@@ -250,7 +250,7 @@ export default {
     grid-row: 1;
   }
   .blockchain-contracts__item:nth-child(6) {
-    grid-column: span 7;
+    grid-column: span 6;
     grid-row: 1;
   }
   .blockchain-contracts__item:nth-child(3) {
