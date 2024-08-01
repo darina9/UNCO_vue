@@ -105,6 +105,30 @@
         />
         <span class="language-name">Українська</span>
       </div>
+      <div class="language-option" @click="changeLanguage('fr')">
+        <img
+          src="../assets/img/FR.svg"
+          alt="French Flag"
+          class="language-flag"
+        />
+        <span class="language-name">Français</span>
+      </div>
+      <div class="language-option" @click="changeLanguage('es')">
+        <img
+          src="../assets/img/ES.svg"
+          alt="Spanish Flag"
+          class="language-flag"
+        />
+        <span class="language-name">Español</span>
+      </div>
+      <div class="language-option" @click="changeLanguage('it')">
+        <img
+          src="../assets/img/IT.svg"
+          alt="Italian Flag"
+          class="language-flag"
+        />
+        <span class="language-name">Italiano</span>
+      </div>
     </div>
     <div id="menu" class="dropdown-menu" ref="menu">
       <button class="close-menu" @click="toggleMenu">
@@ -454,7 +478,10 @@ nav {
   .menu-links > .links-language {
     display: none;
   }
-
+  .links {
+    font-size: 18px;
+    padding: 0;
+  }
   .burger-menu {
     display: block;
     background: none;
@@ -514,6 +541,7 @@ nav {
   }
   .links {
     font-size: 18px;
+    padding: 0;
   }
   .burger-menu {
     display: block;
@@ -565,7 +593,7 @@ nav {
 
   .menu-links {
     list-style: none;
-    padding: 0;
+    padding: 10px;
   }
 
   .menu-links li {
