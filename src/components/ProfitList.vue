@@ -1,5 +1,5 @@
 
- <template>
+<template>
   <section class="profit-list">
     <p class="profit-list__title">{{ $t("profit_list.title") }}</p>
     <ul class="profit-list__list" ref="list">
@@ -184,28 +184,28 @@ export default {
   }
 
   .profit-list__item:nth-child(1) {
-    grid-column: span 6; /* Занимает 6 столбцов */
+    grid-column: span 6; /* Занимает первые 6 столбцов */
     grid-row: 1; /* Первая строка */
   }
 
-  .profit-list__item:nth-child(3) {
-    grid-column: span 6; /* Занимает 6 столбцов */
+  .profit-list__item:nth-child(2) {
+    grid-column: span 6; /* Занимает первые 6 столбцов */
     grid-row: 2; /* Вторая строка */
   }
 
-  .profit-list__item:nth-child(4) {
-    grid-column: span 6; /* Занимает 6 столбцов */
-    grid-row: 3 / span 2;
+  .profit-list__item:nth-child(3) {
+    grid-column: 7 / span 6; /* Начинается с 7-го столбца и занимает последние 6 столбцов */
+    grid-row: 1 / span 2; /* Занимает первую и вторую строки */
   }
 
-  .profit-list__item:nth-child(2) {
-    grid-column: 7 / span 6; /* Начинается с 7-го столбца и занимает 6 столбцов */
-    grid-row: span 2; /* Первая строка */
+  .profit-list__item:nth-child(4) {
+    grid-column: span 6; /* Занимает первые 6 столбцов */
+    grid-row: 3 / span 2; /* Занимает третью и четвертую строки */
   }
 
   .profit-list__item:nth-child(5) {
-    grid-column: 7 / span 6; /* Начинается с 7-го столбца и занимает 6 столбцов */
-    grid-row: 3 / span 2; /* Вторая строка */
+    grid-column: 7 / span 6; /* Начинается с 7-го столбца и занимает последние 6 столбцов */
+    grid-row: 3 / span 2; /* Занимает третью и четвертую строки */
   }
   .profit-list__item_text {
     font-size: 18px;
