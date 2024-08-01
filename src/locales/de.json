@@ -1,21 +1,20 @@
-{"header":{
+{
+  "header": {
     "language": "Sprache",
     "advantages": "Vorteile",
     "how_it_works": "Wie funktioniert es?",
     "contacts": "Kontakte"
-   
   },
-  "banner-info":{
+  "banner-info": {
     "title": "  Es ist ein hochliquider und gesicherter Vertrag über Lebensmittel für Kleinanleger auf Blockchain*",
-    "button":"Jetzt investieren",
+    "button": "Jetzt investieren",
     "quote": {
-      "text": "Die Tokenisierung von Wertpapieren wird die nächste Generation für Märkte und Wertpapiere darstellen",
+      "text": "Die Tokenisierung von Wertpapieren wird die nächste Generation für Märkte und Wertpapiere darstellen.",
       "author": "Larry Fink, CEO BlackRock"
-
     }
   },
   "blockchain-contracts": {
-    "title": "Warum nutzen wir die Blockchain für unsere Terminkontrakte?:",
+    "title": "Warum nutzen wir die Blockchain für unsere Terminkontrakte:",
     "items": {
       "0": "Schnell",
       "1": "Sicher",
@@ -41,28 +40,27 @@
     "title": "Profitabel mit UNCO:",
     "items": {
       "0": "Preis niedriger als im Einzelhandel",
-      "1": "Produkte zur Lieferung — in der Nähe des Wohnortes (unser Öko-Punkt ist näher als der Einzelhandel)",
+      "1": "Produkte zur Lieferung — in der Nähe des Wohnortes (unser Öko-Punkt ist näher als der Einzelhandel)",
       "2": "Produkte von einem lokalen Landwirt/Erzeuger",
-      "3": "Tagesfrische Produkte (das Produkt kann innerhalb von 24 Stunden nach dem Versand vom Landwirt/Erzeuger in Empfang genommen werden)",
-      "4": "Geringe Menge/keine Konservierungsmitteln und andere Zusatzstoffen, die die Haltbarkeit/Qualität des Produkts erhöhen."
+      "3": "Tagesfrische Produkte (das Produkt kann innerhalb von 24 Stunden nach dem Versand vom Landwirt/Erzeuger in Empfang genommen werden)",
+      "4": "Geringe Menge/keine Konservierungsmitteln und andere Zusatzstoffen, die die Haltbarkeit/Qualität des Produkts erhöhen"
     }
-  
-},
-"banner_watch": {
-  "title": "UNCO food futures sind für Sie, wenn Sie:",
-  "button": "In einer frühen Phase investieren",
-  "items": {
-    "0": "Eine gesicherte Anlage mit mehr als 40% Zinsen suchen*",
-    "1": "24H frische und gesunde Lebensmittel zu einem günstigen Preis lieben",
-    "2": "Auf der Suche nach preis- und lieferstabilen Lebensmitteln für Ihr Unternehmen sind",
-    "3": "Günstige Finanzierungsmöglichkeiten für Ihre Lebensmittelproduktion suchen"
-  }
-},
-"banner_founder": {
+  },
+  "banner_watch": {
+    "title": "UNCO food futures sind für Sie, wenn Sie:",
+    "button": "In einer frühen Phase investieren",
+    "items": {
+      "0": "Eine gesicherte Anlage mit mehr als 40% Zinsen suchen*",
+      "1": "24H frische und gesunde Lebensmittel zu einem günstigen Preis lieben",
+      "2": "Auf der Suche nach preis- und lieferstabilen Lebensmitteln für Ihr Unternehmen sind",
+      "3": "Günstige Finanzierungsmöglichkeiten für Ihre Lebensmittelproduktion suchen"
+    }
+  },
+  "banner_founder": {
     "quote": "Smartphones haben vieles verändert, aber sie stehen erst am Anfang, um die enormen Kostenprobleme von Low-Tech im Lebensmittelvertrieb und -handel zu lösen. Und es gibt nicht nur eine Lösung für das Problem der „40 % Lebensmittelverschwendung“, sondern auch schockierend beeindruckende und schnelle Gewinne für diejenigen, die eine Lösung anbieten. Lebensmittel sind das zuverlässigste Geschäft, das es gibt. Es wird immer und für jeden gebraucht.",
     "author": "Andrew Yusupov, Founder UNCO"
   },
-  
+
   "charts_difference": {
     "title": "Erheblicher Preisunterschied selbst bei einem Einzelhändler, der 0,5 km vom Bauern entfernt ist:",
     "potatoes_title": "Preis für Kartoffeln pro Kilo",
@@ -102,7 +100,7 @@
     },
     "answers": {
       "what_is_uff": "UNCO-Lebensmitteltermingeschäfte sind Finanzkontrakte, die den Käufer zum Kauf und den Verkäufer zum Verkauf einer bestimmten Menge eines Lebensmittels zu einem im Voraus festgelegten Preis und Zeitpunkt in der Zukunft verpflichten. Mit diesem Instrument können Sie erhebliche Einsparungen bei den Produktkosten erzielen. Sie erhalten ein „Investitionseinkommen“, denn was Sie sparen, verdienen Sie.",
-      "what_to_do_with_uff": "Sie können an einem bestimmten Ort und zu einer bestimmten Zeit Waren erhalten, die in der “UFF” angegeben sind,  oder  sie auf der p2p-Plattform tauschen.",
+      "what_to_do_with_uff": "Sie können an einem bestimmten Ort und zu einer bestimmten Zeit Waren erhalten, die in der “UFF” angegeben sind, oder sie auf der p2p-Plattform tauschen.",
       "pick_up_product": "Das Produkt wird an dem angegebenen Ort und zu der angegebenen Zeit sein, siehe Ihre UFF.",
       "seller_guarantee": "Wenn der Lieferant nicht liefert, zahlt Ihnen die UNCO den ursprünglichen Preis des Terminkontrakts."
     }
@@ -131,9 +129,9 @@
     "enter_message": "Schreiben Sie Ihre Nachricht",
     "send": "Schicken",
     "contact_us": "Kontaktieren Sie uns:",
-     "rights_reserved": "Alle Rechte vorbehalten. Alle Teile dieser Präsentation können vom Eigentümer jederzeit und ohne vorherige Ankündigung geändert werden. Diese Präsentation oder Teile davon stellen weder ein Geschäftsangebot noch einen Vertragsbestandteil dar. Die Angaben sind Näherungswerte und unterliegen der Verhandlung. Jede Vervielfältigung und Nutzung zu kommerziellen Zwecken bedarf der schriftlichen Zustimmung des Urheberrechtsinhabers.",
+    "rights_reserved": "Alle Rechte vorbehalten. Alle Teile dieser Präsentation können vom Eigentümer jederzeit und ohne vorherige Ankündigung geändert werden. Diese Präsentation oder Teile davon stellen weder ein Geschäftsangebot noch einen Vertragsbestandteil dar. Die Angaben sind Näherungswerte und unterliegen der Verhandlung. Jede Vervielfältigung und Nutzung zu kommerziellen Zwecken bedarf der schriftlichen Zustimmung des Urheberrechtsinhabers.",
     "disclaimer": "*Alle Zahlen, Bezeichnungen, Abkürzungen und Daten auf diesen Webseiten dienen ausschließlich der Erläuterung der Funktionsweise, basieren nicht auf tatsächlichen Fakten und Ereignissen und dürfen nicht für andere Zwecke (einschließlich, aber nicht beschränkt auf: Anlageentscheidungen) verwendet werden , Kauf, Bildung, Vorhersagen) außer einem allgemeinen Verständnis des Geschäftsmodells. Handelsdienstleistungen werden von Drittunternehmen im Rahmen der entsprechenden Vereinbarungen und Lizenzen der jeweiligen Länder erbracht, in denen die Verkäufe und sonstigen Transaktionen stattfinden. Die Wertentwicklung in der Vergangenheit ist kein verlässlicher Indikator für zukünftige Ergebnisse. Ihre Rendite kann aufgrund von Währungsschwankungen steigen oder sinken. Ihr Kapital ist gefährdet.  Handelsoffenlegungen finden Sie auf den Websites der jeweiligen Handelsplattformen."
   }
-  }
+}
 
   
