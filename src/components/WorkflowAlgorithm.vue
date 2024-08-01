@@ -237,7 +237,7 @@ export default {
   grid-column: 6 / span 7;
   grid-row: 1;
   width: 100%;
-  height: 160px;
+  height: 170px;
 }
 
 .workflow_3 {
@@ -288,7 +288,7 @@ export default {
 }
 
 .arrow_2_3 {
-  top: 125%;
+  top: 120%;
 
   transform: rotate(90deg);
 }
