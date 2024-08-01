@@ -44,40 +44,47 @@
     </div>
   </section>
 </template>
-  
-  <script>
+
+<script>
 import { useI18n } from "vue-i18n";
-import { computed } from "vue";
+import { ref, watch, computed, onMounted, onUnmounted } from "vue";
 
 export default {
   name: "ChartsDifference",
   setup() {
     const { t, locale } = useI18n();
+    const currentLang = computed(() => locale.value);
 
     const getChartSrc = (baseName) => {
-      if (locale.value === "ru") {
-        return require(`../assets/img/${baseName}_ru.png`);
-      } else if (locale.value === "de") {
-        return require(`../assets/img/${baseName}_de.png`);
-      } else if (locale.value === "uk") {
-        return require(`../assets/img/${baseName}_uk.png`);
-      } else {
-        return require(`../assets/img/${baseName}.png`);
-      }
+      return require(`../assets/img/${baseName}_${currentLang.value}.png`);
     };
 
-    const potatoesChartSrc = computed(() => getChartSrc("chart_potatoes"));
-    const peachesChartSrc = computed(() => getChartSrc("chart_peaches"));
+    const potatoesChartSrc = ref(getChartSrc("chart_potatoes"));
+    const peachesChartSrc = ref(getChartSrc("chart_peaches"));
+
+    const updateChartSrc = () => {
+      potatoesChartSrc.value = getChartSrc("chart_potatoes");
+      peachesChartSrc.value = getChartSrc("chart_peaches");
+    };
+
+    watch(currentLang, updateChartSrc);
+
     const scrollToFooter = () => {
       const footer = document.querySelector("footer");
       if (footer) {
         footer.scrollIntoView({ behavior: "smooth" });
       }
     };
+
+    onMounted(() => {
+      updateChartSrc();
+    });
+
     return { t, potatoesChartSrc, peachesChartSrc, scrollToFooter };
   },
 };
 </script>
+
   <style>
 @import url("../assets/common-styles.css");
 .charts-difference {
