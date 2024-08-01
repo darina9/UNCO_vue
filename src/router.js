@@ -2,15 +2,15 @@ import { createRouter, createWebHistory } from 'vue-router';
 import MainPage from '@/view/MainPage.vue';
 import NotFound from '@/view/NotFound.vue';
 
+const supportedLangs = ['en', 'ru', 'de', 'uk', 'fr', 'es', 'it'];
+
 const routes = [
   {
     path: '/:lang',
     name: 'MainPage',
     component: MainPage,
     beforeEnter: (to, from, next) => {
-      const supportedLangs = ['en', 'ru', 'de', 'uk'];
       const lang = to.params.lang;
-
       if (!supportedLangs.includes(lang)) {
         next({ name: 'NotFound', params: { lang: 'en' } });
       } else {
