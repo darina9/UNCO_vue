@@ -7,17 +7,23 @@ import en from './locales/en.json';
 import ru from './locales/ru.json';
 import de from './locales/de.json';
 import uk from './locales/uk.json';
+import fr from './locales/fr.json'; 
+import es from './locales/es.json'; 
+import it from './locales/it.json'; 
 
 const messages = {
   en,
   ru,
   de,
-  uk
+  uk,
+  fr, 
+  es,
+  it  
 };
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'en', // Установите язык по умолчанию
+  locale: 'en',
   messages,
 });
 
@@ -45,3 +51,4 @@ function getCookie(name) {
   }
   return null;
 }
+
