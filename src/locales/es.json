@@ -1,0 +1,134 @@
+{
+  "header": {
+    "language": "Idioma",
+    "advantages": "Ventajas",
+    "how_it_works": "¿Cómo funciona?",
+    "contacts": "Contactos"
+  },
+  "banner-info": {
+    "title": "Contrato alimentario de gran liquidez y seguridad para inversores minoristas en blockchain*",
+    "button": "Invierta en",
+    "quote": {
+      "text": "La próxima generación de mercados, la próxima generación de valores será la tokenización de valores.",
+      "author": "Larry Fink, Consejero Delegado de BlackRock"
+    }
+  },
+  "blockchain-contracts": {
+    "title": "Por qué utilizamos blockchain para nuestros contratos de futuros:",
+    "items": {
+      "0": "Rápidamente",
+      "1": "Seguro",
+      "2": "Transparente e inmutable",
+      "3": "Tecnología mundial",
+      "4": "Barato (incluso para pequeñas cantidades de comida)",
+      "5": "Eficientemente con un mínimo de intermediarios"
+    }
+  },
+  "banner_img": {
+    "title": "<span class='text-pink'>UNCO FOOD FUTURES</span> no es sólo seguridad, es siempre <span class='text-pink'> comida REAL</span>",
+    "button": "Haga clic aquí"
+  },
+  "profit_chart": {
+    "info": "Puede obtener más de un 200% de beneficios en pocos meses*",
+    "items": {
+      "0": "Resolver problemas de marketing porque ya tenemos clientes fieles",
+      "1": "Gestión optimizada y <span class='text-pink'>subvencionada</span> de la cadena de suministro",
+      "2": "Financiación de la producción"
+    }
+  },
+  "profit_list": {
+    "title": "La UNCO es favorable:",
+    "items": {
+      "0": "Precio inferior al de venta al público",
+      "1": "Mercancía a domicilio - cerca de casa (nuestro eco-punto está más cerca que un punto de venta)",
+      "2": "Productos de agricultores/productores locales",
+      "3": "Frescos «de un día para otro» (productos disponibles para su recogida en las 24 horas siguientes al envío desde el agricultor/productor)",
+      "4": "Bajo/sin conservantes y otros aditivos que aumentan la vida útil/calidad del producto"
+    }
+  },
+  "banner_watch": {
+    "title": "Los futuros alimentarios de la UNCO son para usted si:",
+    "button": "Invertir ahora",
+    "items": {
+      "0": "Busca inversiones garantizadas con un tipo de interés superior al 40%*",
+      "1": "Amor 24 horas comida fresca y sana a bajo precio",
+      "2": "Busca alimentos con un precio y suministro estables para su negocio",
+      "3": "Buscando formas más baratas de obtener financiación para la producción de alimentos"
+    }
+  },
+  "banner_founder": {
+    "quote": "Los teléfonos inteligentes han cambiado muchas cosas, pero apenas están empezando a resolver los enormes problemas de costes asociados a la baja tecnología en la distribución y venta minorista de alimentos. Y no se trata sólo de una solución al problema del «40% de desperdicio de alimentos», sino de unos beneficios sorprendentemente impresionantes y rápidos para quienes ofrecen una solución. La alimentación es el negocio más fiable. Siempre necesaria y para todos.",
+    "author": "Andrey Yusupov, fundador de UNCO"
+  },
+  "charts_difference": {
+    "title": "Diferencia de precio significativa incluso en un minorista situado a sólo 0,5 kilómetros del agricultor",
+    "potatoes_title": "Precio por kg de patatas",
+    "peaches_title": "Precio por kg de melocotones",
+    "button": "Compre a precio de agricultor con Unco Food Futures"
+  },
+  "workflow_algorithm": {
+    "title": "¿Cómo funciona?",
+    "items": [
+      {
+        "text": "Un ganadero publica un contrato de futuros para la próxima venta de leche a 50 céntimos por litro. La fecha de entrega es dentro de 30 días."
+      },
+      {
+        "text": "Usted nos compra «Leche UFF» por leche a un precio de 50 céntimos +10% (comisión de servicio). Transcurridos 30 días, puede revender «Leche UFF» a 75 céntimos por litro."
+      },
+      {
+        "text": "Frau Marta cuenta su dinero y le gustan los descuentos, así que está encantada de comprarla por 95 céntimos, sobre todo porque es muy fresca, directamente de la granja. La leche llegará mañana al punto de recogida."
+      },
+      {
+        "text": "HoReCa necesita productos frescos todos los días, los compra en pequeños lotes a granel a los distribuidores a 90 céntimos. Aceptarán el producto más fresco de un inversor por 85 céntimos con entrega?"
+      }
+    ]
+  },
+  "banner_farmer": {
+    "average_order_value_text": "Valor medio de los pedidos*",
+    "average_markup_text": "margen de beneficio medio del producto*",
+    "orders_per_month_text": "un cliente habitual de la tienda online realiza 2,4 pedidos al mes*",
+    "footnote": "*Basado en los resultados empresariales de 2 años"
+  },
+  "faq_list": {
+    "title": "FAQ:",
+    "questions": {
+      "what_is_uff": "¿Qué es UFF?",
+      "what_to_do_with_uff": "¿Qué debo hacer con los futuros alimentarios de la OCNU después de comprarlos?",
+      "pick_up_product": "¿Dónde recojo mi mercancía?",
+      "seller_guarantee": "¿Cuál es la garantía de que no seré engañado por un vendedor que acepta mi dinero pero no me entrega la mercancía?"
+    },
+    "answers": {
+      "what_is_uff": "Los futuros alimentarios de la OCNU son un contrato financiero que obliga al comprador a comprar y al vendedor a vender una determinada cantidad de un producto alimentario a un precio y fecha predeterminados en el futuro. Este instrumento le permite ahorrar significativamente en la compra de alimentos. recibir ingresos de «inversión», lo que ahorra, lo gana.",
+      "what_to_do_with_uff": "Usted puede obtener los bienes en él en un lugar determinado y el tiempo especificado en el «UFF» o el intercambio en el sitio p2p.",
+      "pick_up_product": "El artículo estará en el lugar y hora especificados, consulte su UFF.",
+      "seller_guarantee": "Si el proveedor incumple la entrega, la UNCO le pagará el valor original de los futuros."
+    }
+  },
+  "other_services": {
+    "title": "Puede beneficiarse de nuestros otros servicios",
+    "retail_customers": "UFF para clientes minoristas",
+    "exchange": "Intercambio UFF",
+    "nft888": "UNCO NFT888",
+    "investors": "UFF para inversores",
+    "ecopoints": "Ecopuntos",
+    "ecommerce": "UFF para tiendas en línea",
+    "producers": "UFF para los agricultores"
+  },
+  "footer": {
+    "questions": "Para preguntas:",
+    "method_of_communication": "Seleccione un método de comunicación",
+    "phone_number": "Número de teléfono",
+    "email": "E-mail",
+    "messenger_link": "El enlace al mensajero",
+    "social_network_link": "Enlace a las redes sociales",
+    "enter_contact_info": "",
+    "paste_messenger_link": "Insertar un enlace al mensajero",
+    "paste_social_network_link": "Insertar enlace a redes sociales",
+    "message": "",
+    "enter_message": "Escriba su mensaje",
+    "send": "Enviar",
+    "contact_us": "Nuestros contactos:",
+    "rights_reserved": "Todos los derechos reservados. Cualquier parte de esta presentación está sujeta a cambios por parte del propietario en cualquier momento y sin previo aviso. Esta presentación o partes de ella no constituyen una propuesta comercial ni parte de un contrato. Los temas son aproximados y están sujetos a negociación. Cualquier copia y uso con fines comerciales requiere el consentimiento por escrito del titular de los derechos de autor.",
+    "disclaimer": "*Todas las cifras, denominaciones, abreviaturas y datos contenidos en esta página web tienen el único propósito de explicar el esquema operativo, no se basan en hechos y eventos reales y no pueden ser utilizados para ningún otro propósito (incluyendo, pero no limitado a: decisiones de inversión, compra, formación, previsiones) que no sea para una comprensión general del modelo de negocio. Los servicios de trading son proporcionados por terceros según los acuerdos y licencias de los respectivos países en los que se realizan las ventas y otras transacciones. Los resultados pasados no son un indicador fiable de los resultados futuros. Sus beneficios pueden aumentar o disminuir debido a las fluctuaciones cambiarias. Su capital está sujeto a riesgos. Por favor, consulte la Información sobre trading en los sitios web de las plataformas de trading correspondientes."
+  }
+}

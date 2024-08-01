@@ -1,0 +1,134 @@
+{
+  "header": {
+    "language": "Lingua",
+    "advantages": "Vantaggi",
+    "how_it_works": "Come funziona?",
+    "contacts": "Contatti"
+  },
+  "banner-info": {
+    "title": "Contratto alimentare altamente liquido e sicuro per gli investitori retail su blockchain*",
+    "button": "Investire",
+    "quote": {
+      "text": "La prossima generazione di mercati, la prossima generazione di titoli sarà la tokenizzazione dei titoli.",
+      "author": "Larry Fink, CEO di BlackRock"
+    }
+  },
+  "blockchain-contracts": {
+    "title": "Perché usiamo la blockchain per i nostri contratti future:",
+    "items": {
+      "0": "Rapidamente",
+      "1": "Sicuro",
+      "2": "Trasparente e immutabile",
+      "3": "Tecnologia globale",
+      "4": "Economico (anche per piccole quantità di cibo)",
+      "5": "In modo efficiente, con un numero minimo di intermediari"
+    }
+  },
+  "banner_img": {
+    "title": "<span class='text-pink'>UNCO FOOD FUTURES</span> non è solo una sicurezza, è sempre <span class='text-pink'> cibo REALE </span>",
+    "button": "Clicca qui"
+  },
+  "profit_chart": {
+    "info": "Potete ottenere più del 200% di profitto in pochi mesi*",
+    "items": {
+      "0": "Risolvere i problemi di marketing perché abbiamo già clienti fedeli",
+      "1": "Gestione ottimizzata e <span class='text-pink'>sovvenzionata</span> della catena di approvvigionamento",
+      "2": "Finanziamento della produzione"
+    }
+  },
+  "profit_list": {
+    "title": "Con UNCO conviene:",
+    "items": {
+      "0": "Prezzo inferiore a quello di vendita al dettaglio",
+      "1": "Merce in consegna - vicino a casa (il nostro eco-dot è più vicino di un punto vendita)",
+      "2": "Prodotti di un agricoltore/produttore locale",
+      "3": "Freschi “giorno per giorno” (prodotti disponibili per il ritiro entro 24 ore dalla spedizione dall'agricoltore/produttore)",
+      "4": "Bassa quantità/assenza di conservanti e altri additivi che aumentano la durata/la qualità del prodotto"
+    }
+  },
+  "banner_watch": {
+    "title": "I futures alimentari UNCO sono per voi se:",
+    "button": "Investire ora",
+    "items": {
+      "0": "Cercate investimenti garantiti con un tasso d'interesse superiore al 40%*",
+      "1": "Amore per il cibo fresco e sano 24 ore su 24 a un prezzo basso",
+      "2": "Cercate alimenti con un prezzo e una fornitura stabili per la vostra azienda",
+      "3": "Cercate alimenti con un prezzo e una fornitura stabili per la vostra azienda"
+    }
+  },
+  "banner_founder": {
+    "quote": "Gli smartphone hanno cambiato molte cose, ma stanno appena iniziando a risolvere gli enormi problemi di costo associati alla bassa tecnologia nella distribuzione e nella vendita al dettaglio degli alimenti. E non si tratta solo di una soluzione al problema del “40% di sprechi alimentari”, ma di profitti impressionanti e rapidi per chi offre una soluzione. Il cibo è il business più affidabile. Sempre necessario e per tutti.",
+    "author": "Andrey Yusupov, fondatore di UNCO"
+  },
+  "charts_difference": {
+    "title": "Differenza di prezzo significativa anche presso un rivenditore situato a soli 0,5 chilometri dall'agricoltore",
+    "potatoes_title": "Prezzo per kg di patate",
+    "peaches_title": "Prezzo per kg di pesche",
+    "button": "Acquistate al prezzo dell'agricoltore con i Futures alimentari Unco"
+  },
+  "workflow_algorithm": {
+    "title": "Come funziona?",
+    "items": [
+      {
+        "text": "Un agricoltore pubblica un contratto a termine per la prossima vendita di latte a 50 centesimi al litro. La data di consegna è prevista tra 30 giorni."
+      },
+      {
+        "text": "Acquistate “Latte UFF” da noi per il latte al prezzo di 50 centesimi +10% (commissione di servizio). Dopo 30 giorni, potete rivendere “Latte UFF” a 75 centesimi al litro."
+      },
+      {
+        "text": "Frau Marta conta i suoi soldi e ama gli sconti, quindi è felice di comprarlo a 95 centesimi, soprattutto perché è freschissimo, direttamente dalla fattoria. Il latte sarà consegnato al punto di raccolta domani."
+      },
+      {
+        "text": "HoReCa ha bisogno di prodotti freschi ogni giorno e li acquista in piccoli lotti all'ingrosso dai distributori a 90 centesimi. Accetteranno il prodotto più fresco da un investitore per 85 centesimi con consegna?"
+      }
+    ]
+  },
+  "banner_farmer": {
+    "average_order_value_text": "valore medio dell'ordine*",
+    "average_markup_text": "ricarico medio del prodotto*",
+    "orders_per_month_text": "un cliente abituale del negozio online effettua 2,4 ordini al mese*",
+    "footnote": "*basato su risultati di performance aziendale di 2 anni"
+  },
+  "faq_list": {
+    "title": "FAQ:",
+    "questions": {
+      "what_is_uff": "Cos'è la UFF?",
+      "what_to_do_with_uff": "Cosa devo fare con i futures alimentari UNCO dopo l'acquisto?",
+      "pick_up_product": "Dove posso ritirare la mia merce?",
+      "seller_guarantee": "Qual è la garanzia che non sarò truffato da un venditore che prende i miei soldi ma non mi consegna la merce?"
+    },
+    "answers": {
+      "what_is_uff": "I futures alimentari UNCO sono un contratto finanziario che obbliga l'acquirente a comprare e il venditore a vendere una certa quantità di un prodotto alimentare a un prezzo e a una data predeterminati nel futuro. Questo strumento consente di risparmiare in modo significativo sui generi alimentari e di ricevere un reddito da “investimento”: ciò che si risparmia, si guadagna.",
+      "what_to_do_with_uff": "È possibile ottenere i beni su di esso in un determinato luogo e momento specificato nella “UFF” o scambio sul sito p2p.",
+      "pick_up_product": "L'articolo si troverà nel luogo e nell'ora specificati, vedere l'UFF.",
+      "seller_guarantee": "Se il fornitore non rispetta la consegna, UNCO vi pagherà il valore a termine originale."
+    }
+  },
+  "other_services": {
+    "title": "Potete usufruire di altri servizi",
+    "retail_customers": "UFF per i clienti al dettaglio",
+    "exchange": "Scambio UFF",
+    "nft888": "UNCO NFT888",
+    "investors": "UFF per gli investitori",
+    "ecopoints": "Ecopunti",
+    "ecommerce": "UFF per i negozi online",
+    "producers": "UFF per gli agricoltori"
+  },
+  "footer": {
+    "questions": "Per domande:",
+    "method_of_communication": "Selezionare un metodo di comunicazione",
+    "phone_number": "Numero di telefono",
+    "email": "E-mail",
+    "messenger_link": "Il link al messaggero",
+    "social_network_link": "Link ai social media",
+    "enter_contact_info": "",
+    "paste_messenger_link": "Inserire un link al messenger",
+    "paste_social_network_link": "Inserire il link ai social media",
+    "message": "Messaggio",
+    "enter_message": "Inserisci il tuo messaggio",
+    "send": "Inviare",
+    "contact_us": "I nostri contatti:",
+    "rights_reserved": "Tutti i diritti riservati. Qualsiasi parte di questa presentazione può essere modificata dal proprietario in qualsiasi momento senza preavviso. Questa presentazione o parti di essa non costituiscono un'offerta commerciale o parte di un contratto. Gli elementi sono approssimativi e soggetti a discussione. Qualsiasi copia e utilizzo a fini commerciali richiede il consenso scritto del titolare dei diritti.",
+    "disclaimer": "*Tutte le cifre, le denominazioni, le abbreviazioni e i dati contenuti in questa pagina web hanno il solo scopo di spiegare lo schema operativo, non si basano su fatti ed eventi reali e non possono essere utilizzati per nessun altro scopo (inclusi, ma non limitati a: decisioni di investimento, acquisto, formazione, previsioni) se non per una comprensione generale del modello di business. I servizi di trading sono forniti da terzi in base agli accordi e alle licenze dei rispettivi Paesi in cui avvengono le vendite e le altre transazioni. I risultati passati non sono un indicatore affidabile dei risultati futuri. I vostri profitti possono aumentare o diminuire a causa delle fluttuazioni valutarie. Il vostro capitale è soggetto a rischi. Si prega di consultare le Informazioni sul trading sui siti web delle relative piattaforme di trading."
+  }
+}

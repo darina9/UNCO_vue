@@ -1,0 +1,134 @@
+{
+  "header": {
+    "language": "Langue",
+    "advantages": "Les avantages",
+    "how_it_works": "Comment fonctionne-t-il?",
+    "contacts": "Contacts"
+  },
+  "banner-info": {
+    "title": "Contrat alimentaire hautement liquide et sécurisé pour les investisseurs de détail sur la blockchain*",
+    "button": "Investir",
+    "quote": {
+      "text": "La prochaine génération de marchés, la prochaine génération de titres sera la tokenisation des titres.",
+      "author": "Larry Fink, PDG de BlackRock"
+    }
+  },
+  "blockchain-contracts": {
+    "title": "Pourquoi nous utilisons la blockchain pour nos contrats à terme:",
+    "items": {
+      "0": "Rapidement",
+      "1": "Sûr",
+      "2": "Transparent et immuable",
+      "3": "Technologie globale",
+      "4": "Bon marché (même pour de petites quantités de nourriture)",
+      "5": "Efficacement avec un minimum d'intermédiaires"
+    }
+  },
+  "banner_img": {
+    "title": "<span class='text-pink'>UNCO FOOD FUTURES</span> n'est pas seulement une sécurité, c'est toujours <span class='text-pink'> de la VRAIE nourriture </span>",
+    "button": "Cliquez ici"
+  },
+  "profit_chart": {
+    "info": "Vous pouvez faire plus de 200% de profit en quelques mois*",
+    "items": {
+      "0": "Résoudre les problèmes de marketing parce que nous avons déjà des clients fidèles",
+      "1": "Gestion optimisée <span class='text-pink'>et subventionnée</span> de la chaîne d'approvisionnement",
+      "2": "Financement de la production"
+    }
+  },
+  "profit_list": {
+    "title": "UNCO est favorable:",
+    "items": {
+      "0": "Moins cher que le prix de détail",
+      "1": "Marchandises livrées - près de chez soi (notre éco-point est plus proche qu'un point de vente)",
+      "2": "Produits d'un agriculteur/producteur local",
+      "3": "Frais « jour après jour » (produits disponibles dans les 24 heures suivant leur expédition de l'agriculteur/producteur)",
+      "4": "Peu ou pas de conservateurs et autres additifs qui augmentent la durée de conservation/la qualité du produit"
+    }
+  },
+  "banner_watch": {
+    "title": "Les contrats à terme sur les produits alimentaires de l'UNCO sont faits pour vous si vous:",
+    "button": "Investir maintenant",
+    "items": {
+      "0": "Vous recherchez des investissements sécurisés avec un taux d'intérêt supérieur à 40 %*",
+      "1": "L'amour des aliments frais et sains 24 heures sur 24 à un prix avantageux",
+      "2": "Vous recherchez des denrées alimentaires dont le prix et l'approvisionnement sont stables pour votre entreprise",
+      "3": "Recherche de moyens moins onéreux pour financer la production alimentaire"
+    }
+  },
+  "banner_founder": {
+    "quote": "Les smartphones ont changé beaucoup de choses, mais ils commencent à peine à s'attaquer aux énormes problèmes de coûts associés à la faible technologie dans la distribution et la vente au détail de produits alimentaires. Il ne s'agit pas seulement d'une solution au problème des « 40 % de déchets alimentaires », mais aussi de profits rapides et étonnamment impressionnants pour ceux qui proposent une solution. L'alimentation est l'activité la plus fiable qui soit. On en a toujours besoin et tout le monde en a besoin.",
+    "author": "Andrey Yusupov, fondateur de l'UNCO"
+  },
+  "charts_difference": {
+    "title": "Différence de prix significative, même chez un détaillant situé à seulement 0,5 kilomètre de l'agriculteur",
+    "potatoes_title": "Prix par kg de pommes de terre",
+    "peaches_title": "Prix par kg de pêches",
+    "button": "Acheter au prix du fermier avec Unco Food Futures"
+  },
+  "workflow_algorithm": {
+    "title": "Comment cela fonctionne-t-il?",
+    "items": [
+      {
+        "text": "Un agriculteur publie un contrat à terme pour la vente prochaine de lait à 50 cents par litre. La date de livraison est fixée à 30 jours."
+      },
+      {
+        "text": "Vous nous achetez « Milk UFF » pour le lait au prix de 50 cents + 10 % (commission de service). Après 30 jours, vous pouvez revendre le « Milk UFF » au prix de 75 centimes par litre."
+      },
+      {
+        "text": "Frau Marta compte son argent et aime les réductions, elle est donc heureuse de l'acheter pour 95 cents, d'autant plus qu'il est très frais - il vient directement de la ferme. Le lait sera livré demain au point de ramassage."
+      },
+      {
+        "text": "HoReCa a besoin de produits frais tous les jours et les achète par petits lots en vrac à des distributeurs au prix de 90 cents. Acceptera-t-elle le produit le plus frais d'un investisseur au prix de 85 cents avec livraison?"
+      }
+    ]
+  },
+  "banner_farmer": {
+    "average_order_value_text": "valeur moyenne des commandes*",
+    "average_markup_text": "marge moyenne sur les produits*",
+    "orders_per_month_text": "un client régulier de la boutique en ligne passe 2,4 commandes par mois*",
+    "footnote": "*Basé sur les résultats de la performance de l'entreprise sur 2 ans"
+  },
+  "faq_list": {
+    "title": "FAQ:",
+    "questions": {
+      "what_is_uff": "Qu'est-ce que l'UFF?",
+      "what_to_do_with_uff": "Que dois-je faire des contrats à terme sur aliments UNCO après l'achat?",
+      "pick_up_product": "Où dois-je retirer mes marchandises?",
+      "seller_guarantee": "Quelle est la garantie que je ne serai pas escroqué par un vendeur qui prend mon argent mais ne me livre pas la marchandise?"
+    },
+    "answers": {
+      "what_is_uff": "Le contrat à terme sur les produits alimentaires UNCO est un contrat financier qui oblige l'acheteur à acheter et le vendeur à vendre une certaine quantité d'un produit alimentaire à un prix et à une date prédéterminés dans le futur. Cet instrument vous permet de réaliser des économies substantielles sur vos achats de produits alimentaires et de percevoir des revenus «d'investissement» : ce que vous épargnez, vous le gagnez.",
+      "what_to_do_with_uff": "Vous pouvez obtenir les marchandises sur ce site à un endroit et à une heure déterminés, spécifiés dans l'«UFF» ou l'échange sur le site p2p.",
+      "pick_up_product": "L'article sera disponible à l'endroit et à l'heure spécifiés, voir votre UFF.",
+      "seller_guarantee": "Si le fournisseur est en défaut de livraison, UNCO vous paiera la valeur initiale du contrat à terme."
+    }
+  },
+  "other_services": {
+    "title": "Vous pouvez bénéficier de nos autres services",
+    "retail_customers": "UFF pour les clients de détail",
+    "exchange": "Bourse UFF",
+    "nft888": "UNCO NFT888",
+    "investors": "UFF pour les investisseurs",
+    "ecopoints": "Les écopoints",
+    "ecommerce": "UFF pour les boutiques en ligne",
+    "producers": "UFF pour les agriculteurs"
+  },
+  "footer": {
+    "questions": "Pour toute question:",
+    "method_of_communication": "Sélectionner une méthode de communication",
+    "phone_number": "Numéro de téléphone",
+    "email": "Courriel",
+    "messenger_link": "Le lien vers le messager",
+    "social_network_link": "Lien vers les médias sociaux",
+    "enter_contact_info": "",
+    "paste_messenger_link": "Insérer un lien vers le messager",
+    "paste_social_network_link": "Insérer un lien vers un média social",
+    "message": "",
+    "enter_message": "Saisissez votre message",
+    "send": "Envoyer",
+    "contact_us": "Nos contacts:",
+    "rights_reserved": "Tous droits réservés. Toutes les parties de cette présentation peuvent être modifiées par le propriétaire à tout moment et sans préavis. Cette présentation ou des parties de cette présentation ne constituent pas une proposition commerciale ou une partie d'un contrat. Les sujets sont approximatifs et sujets à négociation. Toute copie ou utilisation à des fins commerciales nécessite l'accord écrit du détenteur des droits d'auteur.",
+    "disclaimer": "*Tous les chiffres, désignations, abréviations et données figurant sur cette page web ont pour seul but d'expliquer le mode de fonctionnement, ne sont pas basés sur des faits et des événements réels et ne peuvent être utilisés à d'autres fins (y compris, mais sans s'y limiter : décisions d'investissement, achats, éducation, prévisions) qu'une compréhension générale du modèle d'entreprise. Les services de négociation sont fournis par des tiers dans le cadre des accords et licences pertinents des pays respectifs dans lesquels les ventes et autres transactions ont lieu. Les performances passées ne constituent pas un indicateur fiable des résultats futurs. Vos bénéfices peuvent augmenter ou diminuer en raison des fluctuations des taux de change. Votre capital est soumis à des risques. Veuillez consulter les informations relatives à la négociation sur les sites web des plateformes de négociation concernées."
+  }
+}
