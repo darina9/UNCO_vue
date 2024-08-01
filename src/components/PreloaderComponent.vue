@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="preloader-container">
     <img
       src="../assets/img/unco.svg"
