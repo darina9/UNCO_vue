@@ -7,10 +7,10 @@
     />
     <div class="banner-img__text">
       <p class="banner-img__text_title" v-html="$t('banner_img.title')"></p>
-      <div class="banner-img__text_btn">
-        <button class="btn">
-          <a href="https://www.unco.club/">{{ $t("banner_img.button") }}</a>
-        </button>
+     <div class="banner-img__text_btn">
+        <a class="btn" href="https://www.unco.club/" target="_blank">{{
+          $t("banner_img.button")
+        }}</a>
       </div>
     </div>
     <button id="scroll-to-top">
