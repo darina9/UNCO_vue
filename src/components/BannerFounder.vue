@@ -120,8 +120,11 @@ export default {
     height: 218px;
     margin: 20px;
   }
-  .banner-founder__text_quote {
+   .banner-founder__text_quote {
     font-size: 18px;
+    text-align: left;
+    padding-right: 6px;
+    padding-left: 6px;
   }
   .banner-founder__text_autor {
     margin-top: 0;
