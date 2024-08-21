@@ -14,7 +14,7 @@
           alt="UFF for retail customers"
         />
         <div class="other_services__item_btn nowrap">
-          <a href="https://unco.club" target="_blank">
+          <a href="https://foodfutures.club" target="_blank">
             <button class="btn">
               {{ $t("other_services.retail_customers") }}
             </button>
@@ -28,7 +28,7 @@
           alt="UFF exchange"
         />
         <div class="other_services__item_btn">
-          <a href="https://unco.market" target="_blank">
+          <a href="https://unco.exchange" target="_blank">
             <button class="btn">{{ $t("other_services.exchange") }}</button>
           </a>
         </div>
@@ -40,7 +40,7 @@
           alt="UNCO NFT888"
         />
         <div class="other_services__item_btn">
-          <a href="https://unco.market" target="_blank">
+          <a href="https://foodnft.org" target="_blank">
             <button class="btn">{{ $t("other_services.nft888") }}</button>
           </a>
         </div>
@@ -52,7 +52,7 @@
           alt="UFF for investors"
         />
         <div class="other_services__item_btn height">
-          <a href="https://foodnft.org" target="_blank">
+          <a href="https://unco.global" target="_blank">
             <button class="btn">{{ $t("other_services.investors") }}</button>
           </a>
         </div>
@@ -76,7 +76,7 @@
           alt="UFF for E-commerce"
         />
         <div class="other_services__item_btn height">
-          <a href="https://foodnft.org" target="_blank">
+          <a href="https://foodfutures.club" target="_blank">
             <button class="btn">{{ $t("other_services.ecommerce") }}</button>
           </a>
         </div>
@@ -88,7 +88,7 @@
           alt="UFF for producers"
         />
         <div class="other_services__item_btn height">
-          <a href="https://foodnft.org" target="_blank">
+          <a href="https://unco.trade" target="_blank">
             <button class="btn">{{ $t("other_services.producers") }}</button>
           </a>
         </div>
